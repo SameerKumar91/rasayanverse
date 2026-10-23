@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | RasayanVerse</title>
+    <meta name="robots" content="noindex">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/auth.css">
+</head>
+<body>
+<header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+        <a href="/index.html" class="brand" aria-label="RasayanVerse Home">
+            <div class="brand-icon">⚗</div>
+            <div class="brand-text">
+                <div><span class="brand-hindi">रसायन</span><span class="brand-english">Verse</span></div>
+                <small>VIRTUAL CHEMISTRY LAB</small>
+            </div>
+        </a>
+        <nav class="dash-links" aria-label="Quick links">
+            <a href="/experiments.html">Experiments</a>
+            <a href="/learn-chemistry.html">Learn Chemistry</a>
+            <a href="/periodic-table.html">Periodic Table</a>
+        </nav>
+        <div class="navbar-actions">
+            <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode" title="Switch to dark mode">
+                <span class="theme-icon" id="themeIcon">☾</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main class="section">
+    <div class="container" id="dashboardRoot">
+        <div class="dash-loading">Loading dashboard...</div>
+    </div>
+</main>
+
+<script src="/js/theme.js"></script>
+<script src="/js/auth-nav.js"></script>
+<script src="/js/dashboard.js"></script>
+</body>
+</html>

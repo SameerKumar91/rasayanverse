@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | RasayanVerse</title>
+    <meta name="robots" content="noindex">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/auth.css">
+</head>
+<body>
+<header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+        <a href="/index.html" class="brand" aria-label="RasayanVerse Home">
+            <div class="brand-icon">⚗</div>
+            <div class="brand-text">
+                <div><span class="brand-hindi">रसायन</span><span class="brand-english">Verse</span></div>
+                <small>VIRTUAL CHEMISTRY LAB</small>
+            </div>
+        </a>
+        <div class="navbar-actions">
+            <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode" title="Switch to dark mode">
+                <span class="theme-icon" id="themeIcon">☾</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main class="auth-main">
+    <section class="auth-card">
+        <div class="auth-head">
+            <div class="auth-icon">⚗</div>
+            <h1 id="authTitle">Student login</h1>
+            <p id="authSubtitle">Log in with a one-time password sent to your email.</p>
+        </div>
+
+        <div class="auth-tabs" id="authTabs" role="tablist" aria-label="Account type">
+            <button type="button" class="auth-tab active" data-role="student" role="tab" aria-selected="true">🎓 Student</button>
+            <button type="button" class="auth-tab" data-role="teacher" role="tab" aria-selected="false">👩‍🏫 Teacher</button>
+        </div>
+
+        <form id="requestForm" class="auth-form" novalidate>
+            <div class="auth-field register-only" hidden>
+                <label for="nameInput">Full name</label>
+                <input id="nameInput" type="text" autocomplete="name" maxlength="80" placeholder="e.g. Aarav Patel">
+            </div>
+            <div class="auth-field register-only student-only" hidden>
+                <label for="enrollmentInput">Enrollment number</label>
+                <input id="enrollmentInput" type="text" maxlength="30" placeholder="e.g. 2203031240001">
+            </div>
+            <div class="auth-field">
+                <label for="emailInput">Email address</label>
+                <input id="emailInput" type="email" autocomplete="email" maxlength="254" placeholder="you@example.com" required>
+            </div>
+            <button type="submit" class="button button-primary auth-submit" id="requestBtn">Send OTP →</button>
+            <p class="auth-switch">
+                <span id="switchText">New to RasayanVerse?</span>
+                <button type="button" class="link-button" id="modeSwitch">Create an account</button>
+            </p>
+        </form>
+
+        <form id="verifyForm" class="auth-form" hidden novalidate>
+            <p class="otp-info">Enter the 6-digit code sent to <strong id="otpEmail"></strong></p>
+            <div class="auth-field">
+                <label for="otpInput">One-time password</label>
+                <input id="otpInput" class="otp-input" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="••••••">
+            </div>
+            <button type="submit" class="button button-primary auth-submit" id="verifyBtn">Verify &amp; Continue</button>
+            <div class="otp-actions">
+                <button type="button" class="link-button" id="resendBtn" disabled>Resend OTP</button>
+                <button type="button" class="link-button" id="changeEmailBtn">Change email</button>
+            </div>
+        </form>
+
+        <div class="auth-message" id="authMessage" role="status" aria-live="polite"></div>
+    </section>
+</main>
+
+<script src="/js/theme.js"></script>
+<script src="/js/login.js"></script>
+</body>
+</html>
