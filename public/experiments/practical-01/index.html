@@ -1,0 +1,2087 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="RasayanVerse Practical 01 - Acid Base Titration"
+    >
+
+    <title>Practical 01 | Acid–Base Titration | RasayanVerse</title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../../css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../../css/laboratory.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../../css/responsive.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="practical.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         LOADER
+    ====================================================== -->
+
+    <div
+        class="page-loader"
+        id="pageLoader"
+    >
+
+        <div class="loader-flask">
+            <div class="loader-liquid"></div>
+        </div>
+
+        <p>
+            Preparing Practical 01...
+        </p>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header
+        class="navbar"
+        id="navbar"
+    >
+
+        <div class="container navbar-inner">
+
+
+            <!-- BRAND -->
+
+            <a
+                href="../../index.html"
+                class="brand"
+                aria-label="RasayanVerse Home"
+            >
+
+                <div class="brand-icon">
+                    ⚗
+                </div>
+
+                <div class="brand-text">
+
+                    <div>
+
+                        <span class="brand-hindi">
+                            रसायन
+                        </span>
+
+                        <span class="brand-english">
+                            Verse
+                        </span>
+
+                    </div>
+
+                    <small>
+                        VIRTUAL CHEMISTRY LAB
+                    </small>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- DESKTOP NAVIGATION -->
+
+            <nav
+                class="desktop-nav"
+                aria-label="Main navigation"
+            >
+
+                <a
+                    href="../../index.html" class="nav-link"
+                >
+                    Home
+                </a>
+
+                <a
+                    href="../../experiments.html"
+                    class="nav-link" active
+                >
+                    Experiments
+                </a>
+
+                <a
+                    href="../../learn-chemistry.html"
+                    class="nav-link"
+                >
+                    Learn Chemistry
+                </a>
+
+                <a
+                    href="../../periodic-table.html"
+                    class="nav-link"
+                >
+                    Periodic Table
+                </a>
+
+                <a
+                    href="../../about.html"
+                    class="nav-link"
+                >
+                    About
+                </a>
+
+                <a
+                    href="../../contact.html"
+                    class="nav-link"
+                >
+                    Contact
+                </a>
+
+            </nav>
+
+
+
+            <!-- NAV ACTIONS -->
+
+            <div class="navbar-actions">
+
+
+                <!-- THEME -->
+
+                <button
+                    type="button"
+                    class="theme-toggle"
+                    id="themeToggle"
+                    aria-label="Switch to dark mode"
+                    title="Switch to dark mode"
+                >
+
+                    <span
+                        class="theme-icon"
+                        id="themeIcon"
+                    >
+                        ☾
+                    </span>
+
+                </button>
+
+
+                <!-- DESKTOP CTA -->
+
+                <a
+                    href="../../experiments.html"
+                    class="nav-cta"
+                >
+
+                    <span>🧪</span>
+
+                    Enter Lab
+
+                </a>
+
+
+                <!-- MOBILE MENU -->
+
+                <button
+                    type="button"
+                    class="mobile-menu-button"
+                    id="mobileMenuButton"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                >
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- MOBILE NAVIGATION -->
+
+        <nav
+            class="mobile-nav"
+            id="mobileNav"
+            aria-label="Mobile navigation"
+        >
+
+            <a
+                href="../../index.html" class="mobile-nav-link"
+            >
+                Home
+            </a>
+
+            <a
+                href="../../experiments.html"
+                class="mobile-nav-link" active
+            >
+                Experiments
+            </a>
+
+            <a
+                href="../../learn-chemistry.html"
+                class="mobile-nav-link"
+            >
+                Learn Chemistry
+            </a>
+
+            <a
+                href="../../periodic-table.html"
+                class="mobile-nav-link"
+            >
+                Periodic Table
+            </a>
+
+            <a
+                href="../../about.html"
+                class="mobile-nav-link"
+            >
+                About
+            </a>
+
+            <a
+                href="../../contact.html"
+                class="mobile-nav-link"
+            >
+                Contact
+            </a>
+
+            <a
+                href="../../experiments.html"
+                class="mobile-lab-button"
+            >
+                🧪 Enter Virtual Lab
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             PRACTICAL HEADER
+        ================================================== -->
+
+        <section class="practical-hero">
+
+            <div class="container">
+
+                <div class="breadcrumb">
+
+                    <a href="../../index.html">
+                        Home
+                    </a>
+
+                    <span>›</span>
+
+                    <a href="../../experiments.html">
+                        Experiments
+                    </a>
+
+                    <span>›</span>
+
+                    <span>
+                        Practical 01
+                    </span>
+
+                </div>
+
+
+                <div class="practical-hero-grid">
+
+
+                    <div>
+
+                        <span class="practical-label">
+                            PRACTICAL 01
+                        </span>
+
+                        <h1>
+                            Acid–Base
+                            <span>
+                                Titration
+                            </span>
+                        </h1>
+
+                        <p>
+                            Determine the concentration of
+                            an unknown acid solution by
+                            reacting it with a standard base
+                            solution until the endpoint is
+                            reached.
+                        </p>
+
+
+                        <div class="practical-meta">
+
+                            <span>
+                                ⚗ Acid • Base
+                            </span>
+
+                            <span>
+                                ⏱ 10–15 min
+                            </span>
+
+                            <span>
+                                🎓 Guided Practical
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="hero-reaction-card">
+
+                        <div class="reaction-card-title">
+                            Reaction
+                        </div>
+
+                        <div class="reaction-card-equation">
+
+                            <strong>
+                                HCl
+                            </strong>
+
+                            <span>+</span>
+
+                            <strong>
+                                NaOH
+                            </strong>
+
+                            <span>→</span>
+
+                            <strong>
+                                NaCl
+                            </strong>
+
+                            <span>+</span>
+
+                            <strong>
+                                H₂O
+                            </strong>
+
+                        </div>
+
+                        <small>
+                            Acid + Base → Salt + Water
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PRACTICAL NAVIGATION
+        ================================================== -->
+
+        <div class="practical-sticky-nav">
+
+            <div class="container practical-nav-inner">
+
+                <a href="#concept">
+                    Concept
+                </a>
+
+                <a href="#aim">
+                    Aim
+                </a>
+
+                <a href="#apparatus">
+                    Apparatus
+                </a>
+
+                <a href="#chemicals">
+                    Chemicals
+                </a>
+
+                <a href="#safety">
+                    Safety
+                </a>
+
+                <a href="#procedure">
+                    Procedure
+                </a>
+
+                <a
+                    href="#virtual-lab"
+                    class="nav-lab-link"
+                >
+                    🧪 Virtual Lab
+                </a>
+
+                <a href="#result">
+                    Result
+                </a>
+
+                <a href="#quiz">
+                    Quiz
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             CONCEPT
+        ================================================== -->
+
+        <section
+            class="practical-section"
+            id="concept"
+        >
+
+            <div class="container">
+
+                <div class="section-heading-simple">
+
+                    <span>
+                        01 • BASIC CONCEPT
+                    </span>
+
+                    <h2>
+                        What is Acid–Base Titration?
+                    </h2>
+
+                </div>
+
+
+                <div class="concept-grid">
+
+                    <div class="concept-main">
+
+                        <p>
+                            Titration is a laboratory method
+                            used to determine the concentration
+                            of an unknown solution by reacting
+                            it with a solution whose concentration
+                            is already known.
+                        </p>
+
+                        <p>
+                            In this experiment, sodium hydroxide
+                            (NaOH) is added slowly from a burette
+                            to hydrochloric acid (HCl). A small
+                            amount of phenolphthalein is used as
+                            an indicator.
+                        </p>
+
+                        <p>
+                            Near the endpoint, the solution
+                            changes from colourless to a very
+                            faint pink colour. This tells us that
+                            the acid has been neutralized.
+                        </p>
+
+                    </div>
+
+
+                    <div class="concept-highlight">
+
+                        <div class="concept-formula">
+                            HCl + NaOH → NaCl + H₂O
+                        </div>
+
+                        <p>
+                            This is a
+                            <strong>
+                                neutralization reaction
+                            </strong>
+                            between an acid and a base.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             AIM
+        ================================================== -->
+
+        <section
+            class="practical-section soft-section"
+            id="aim"
+        >
+
+            <div class="container">
+
+                <div class="info-card aim-card">
+
+                    <div class="info-icon">
+                        🎯
+                    </div>
+
+                    <div>
+
+                        <span class="info-label">
+                            AIM
+                        </span>
+
+                        <h2>
+                            To determine the concentration
+                            of an unknown hydrochloric acid
+                            solution using standard sodium
+                            hydroxide solution.
+                        </h2>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             APPARATUS
+        ================================================== -->
+
+        <section
+            class="practical-section"
+            id="apparatus"
+        >
+
+            <div class="container">
+
+                <div class="section-heading-simple">
+
+                    <span>
+                        03 • APPARATUS
+                    </span>
+
+                    <h2>
+                        Laboratory Equipment
+                    </h2>
+
+                </div>
+
+
+                <div class="items-grid">
+
+
+                    <div class="item-card">
+
+                        <div class="item-visual burette-mini">
+                            ⚗
+                        </div>
+
+                        <h3>
+                            Burette
+                        </h3>
+
+                        <p>
+                            Used to deliver the standard
+                            NaOH solution accurately.
+                        </p>
+
+                    </div>
+
+
+                    <div class="item-card">
+
+                        <div class="item-visual flask-mini">
+                            ⚗
+                        </div>
+
+                        <h3>
+                            Conical Flask
+                        </h3>
+
+                        <p>
+                            Holds the hydrochloric acid
+                            and indicator.
+                        </p>
+
+                    </div>
+
+
+                    <div class="item-card">
+
+                        <div class="item-visual">
+                            🧪
+                        </div>
+
+                        <h3>
+                            Pipette
+                        </h3>
+
+                        <p>
+                            Used to measure a fixed volume
+                            of the acid solution.
+                        </p>
+
+                    </div>
+
+
+                    <div class="item-card">
+
+                        <div class="item-visual">
+                            📏
+                        </div>
+
+                        <h3>
+                            Measuring Equipment
+                        </h3>
+
+                        <p>
+                            Used to read the volume delivered
+                            from the burette.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CHEMICALS
+        ================================================== -->
+
+        <section
+            class="practical-section soft-section"
+            id="chemicals"
+        >
+
+            <div class="container">
+
+                <div class="section-heading-simple">
+
+                    <span>
+                        04 • CHEMICALS
+                    </span>
+
+                    <h2>
+                        Chemicals Required
+                    </h2>
+
+                </div>
+
+
+                <div class="chemical-list">
+
+
+                    <div class="chemical-row">
+
+                        <div
+                            class="chemical-color blue"
+                        ></div>
+
+                        <div>
+
+                            <strong>
+                                Hydrochloric Acid (HCl)
+                            </strong>
+
+                            <span>
+                                Unknown concentration
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="chemical-row">
+
+                        <div
+                            class="chemical-color teal"
+                        ></div>
+
+                        <div>
+
+                            <strong>
+                                Sodium Hydroxide (NaOH)
+                            </strong>
+
+                            <span>
+                                Standard solution — 0.1 M
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="chemical-row">
+
+                        <div
+                            class="chemical-color pink"
+                        ></div>
+
+                        <div>
+
+                            <strong>
+                                Phenolphthalein
+                            </strong>
+
+                            <span>
+                                Acid–base indicator
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SAFETY
+        ================================================== -->
+
+        <section
+            class="practical-section"
+            id="safety"
+        >
+
+            <div class="container">
+
+                <div class="safety-box">
+
+                    <div class="safety-title">
+
+                        <span>
+                            ⚠
+                        </span>
+
+                        <div>
+
+                            <span>
+                                05 • SAFETY
+                            </span>
+
+                            <h2>
+                                Work Carefully
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="safety-grid">
+
+                        <div>
+                            Wear appropriate laboratory
+                            protection.
+                        </div>
+
+                        <div>
+                            Handle acids and bases carefully.
+                        </div>
+
+                        <div>
+                            Never taste or directly smell
+                            laboratory chemicals.
+                        </div>
+
+                        <div>
+                            Clean spills immediately and
+                            inform the instructor.
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PROCEDURE
+        ================================================== -->
+
+        <section
+            class="practical-section soft-section"
+            id="procedure"
+        >
+
+            <div class="container">
+
+                <div class="section-heading-simple">
+
+                    <span>
+                        06 • PROCEDURE
+                    </span>
+
+                    <h2>
+                        Follow the Experiment
+                    </h2>
+
+                    <p>
+                        Read each step before performing
+                        the corresponding action in the
+                        virtual laboratory.
+                    </p>
+
+                </div>
+
+
+                <div class="procedure-list">
+
+
+                    <div class="procedure-step">
+
+                        <div class="step-number">
+                            01
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Prepare the burette
+                            </h3>
+
+                            <p>
+                                Rinse and fill the burette
+                                with standard 0.1 M NaOH
+                                solution.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="procedure-step">
+
+                        <div class="step-number">
+                            02
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Take the acid sample
+                            </h3>
+
+                            <p>
+                                Transfer a measured volume
+                                of HCl into a clean conical
+                                flask.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="procedure-step">
+
+                        <div class="step-number">
+                            03
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Add indicator
+                            </h3>
+
+                            <p>
+                                Add a few drops of
+                                phenolphthalein to the
+                                acid solution.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="procedure-step">
+
+                        <div class="step-number">
+                            04
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Start titration
+                            </h3>
+
+                            <p>
+                                Slowly add NaOH from the
+                                burette while gently
+                                swirling the flask.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="procedure-step">
+
+                        <div class="step-number">
+                            05
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Find the endpoint
+                            </h3>
+
+                            <p>
+                                Stop when a faint pink colour
+                                persists. Record the burette
+                                reading.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             VIRTUAL LAB
+        ================================================== -->
+
+        <section
+            class="virtual-lab-section"
+            id="virtual-lab"
+        >
+
+            <div class="container">
+
+
+                <div class="virtual-lab-header">
+
+                    <div>
+
+                        <span>
+                            07 • VIRTUAL LABORATORY
+                        </span>
+
+                        <h2>
+                            Perform the Titration
+                        </h2>
+
+                        <p>
+                            Follow the instructions and
+                            interact with the laboratory.
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="reset-button"
+                        id="resetExperiment"
+                    >
+                        ↻ Reset Experiment
+                    </button>
+
+                </div>
+
+
+
+                <div class="virtual-lab">
+
+
+                    <!-- LAB TOP BAR -->
+
+                    <div class="lab-control-bar">
+
+                        <div>
+
+                            <span class="lab-live-dot"></span>
+
+                            Virtual Workbench
+
+                        </div>
+
+                        <div id="labStatus">
+                            Ready
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- LAB CONTENT -->
+
+                    <div class="lab-workspace">
+
+
+                        <!-- INSTRUCTIONS -->
+
+                        <aside class="instruction-panel">
+
+                            <span class="instruction-label">
+                                YOUR TASK
+                            </span>
+
+                            <h3 id="instructionTitle">
+                                Prepare the acid sample
+                            </h3>
+
+                            <p id="instructionText">
+                                Begin by adding the HCl
+                                sample to the conical flask.
+                            </p>
+
+
+                            <div
+                                class="instruction-progress"
+                            >
+
+                                <div
+                                    id="instructionProgress"
+                                ></div>
+
+                            </div>
+
+
+                            <span
+                                class="instruction-count"
+                                id="instructionCount"
+                            >
+                                Step 1 of 4
+                            </span>
+
+
+                            <div class="lab-tip">
+
+                                💡
+
+                                <span>
+                                    Perform each step in
+                                    order to reach the
+                                    endpoint.
+                                </span>
+
+                            </div>
+
+                        </aside>
+
+
+
+                        <!-- SCENE -->
+
+                        <div class="titration-scene">
+
+
+                            <!-- WALL -->
+
+                            <div class="scene-wall">
+
+                                <div
+                                    class="scene-window"
+                                ></div>
+
+                                <div
+                                    class="scene-shelf"
+                                >
+
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- BURETTE -->
+
+                            <div class="titration-burette">
+
+                                <div
+                                    class="stand-base"
+                                ></div>
+
+                                <div
+                                    class="stand-rod"
+                                ></div>
+
+                                <div
+                                    class="stand-clamp"
+                                ></div>
+
+                                <div
+                                    class="burette-tube"
+                                >
+
+                                    <div
+                                        class="burette-solution"
+                                        id="buretteSolution"
+                                    ></div>
+
+
+                                    <div class="graduations">
+
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+
+                                    </div>
+
+                                    <div
+                                        class="burette-valve"
+                                        id="buretteValve"
+                                    ></div>
+
+                                    <div
+                                        class="falling-drop"
+                                        id="fallingDrop"
+                                    ></div>
+
+                                </div>
+
+                                <div
+                                    class="burette-value"
+                                    id="buretteValue"
+                                >
+                                    0.0 mL
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- FLASK -->
+
+                            <div class="titration-flask">
+
+                                <div
+                                    class="flask-neck"
+                                ></div>
+
+                                <div
+                                    class="titration-flask-body"
+                                >
+
+                                    <div
+                                        class="acid-liquid"
+                                        id="acidLiquid"
+                                    >
+
+                                        <span class="lab-bubble bubble-a"></span>
+                                        <span class="lab-bubble bubble-b"></span>
+
+                                    </div>
+
+                                </div>
+
+                                <div
+                                    class="flask-rim"
+                                ></div>
+
+                                <span
+                                    class="flask-volume"
+                                >
+                                    10 mL HCl
+                                </span>
+
+                            </div>
+
+
+
+                            <!-- INDICATOR BOTTLE -->
+
+                            <div
+                                class="indicator-bottle"
+                            >
+
+                                <div
+                                    class="indicator-cap"
+                                ></div>
+
+                                <div
+                                    class="indicator-body"
+                                >
+
+                                    <span>
+                                        PHENOLPHTHALEIN
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- NAOH BOTTLE -->
+
+                            <div
+                                class="naoh-bottle"
+                            >
+
+                                <div
+                                    class="naoh-cap"
+                                ></div>
+
+                                <div
+                                    class="naoh-body"
+                                >
+
+                                    <strong>
+                                        NaOH
+                                    </strong>
+
+                                    <small>
+                                        0.1 M
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- ACTION BUTTONS -->
+
+                            <div class="lab-actions">
+
+                                <button
+                                    type="button"
+                                    id="addAcid"
+                                    class="lab-action-button"
+                                >
+                                    Add HCl Sample
+                                </button>
+
+                                <button
+                                    type="button"
+                                    id="addIndicator"
+                                    class="lab-action-button"
+                                    disabled
+                                >
+                                    Add Indicator
+                                </button>
+
+                                <button
+                                    type="button"
+                                    id="addNaOH"
+                                    class="lab-action-button"
+                                    disabled
+                                >
+                                    Add NaOH Drop
+                                </button>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <!-- OBSERVATION -->
+
+                        <aside class="lab-observation">
+
+                            <span class="instruction-label">
+                                LIVE OBSERVATION
+                            </span>
+
+
+                            <div class="reading-box">
+
+                                <span>
+                                    Burette Reading
+                                </span>
+
+                                <strong
+                                    id="readingValue"
+                                >
+                                    0.0 mL
+                                </strong>
+
+                            </div>
+
+
+                            <div class="reading-box">
+
+                                <span>
+                                    Solution Colour
+                                </span>
+
+                                <strong
+                                    id="colourValue"
+                                >
+                                    Colourless
+                                </strong>
+
+                            </div>
+
+
+                            <div class="reading-box">
+
+                                <span>
+                                    Endpoint
+                                </span>
+
+                                <strong
+                                    id="endpointValue"
+                                >
+                                    Not reached
+                                </strong>
+
+                            </div>
+
+
+                            <div
+                                class="endpoint-indicator"
+                                id="endpointIndicator"
+                            >
+
+                                <span></span>
+
+                                Keep adding NaOH slowly.
+
+                            </div>
+
+                        </aside>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             WHAT HAPPENS
+        ================================================== -->
+
+        <section class="practical-section">
+
+            <div class="container">
+
+                <div class="what-happens">
+
+                    <div>
+
+                        <span>
+                            WHAT HAPPENS?
+                        </span>
+
+                        <h2>
+                            Why does the colour change?
+                        </h2>
+
+                    </div>
+
+
+                    <p>
+                        Phenolphthalein is colourless in an
+                        acidic solution. As NaOH neutralizes
+                        the HCl, the solution gradually moves
+                        toward the basic range. At the endpoint,
+                        a very small excess of NaOH makes
+                        phenolphthalein turn faint pink.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             OBSERVATION
+        ================================================== -->
+
+        <section
+            class="practical-section soft-section"
+            id="observation"
+        >
+
+            <div class="container">
+
+                <div class="section-heading-simple">
+
+                    <span>
+                        08 • OBSERVATION
+                    </span>
+
+                    <h2>
+                        Record the Observation
+                    </h2>
+
+                </div>
+
+
+                <div class="observation-table-wrapper">
+
+                    <table class="observation-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Trial
+                                </th>
+
+                                <th>
+                                    Initial Reading
+                                </th>
+
+                                <th>
+                                    Final Reading
+                                </th>
+
+                                <th>
+                                    NaOH Used
+                                </th>
+
+                                <th>
+                                    Endpoint
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    1
+                                </td>
+
+                                <td>
+                                    0.0 mL
+                                </td>
+
+                                <td
+                                    id="observationFinal"
+                                >
+                                    —
+                                </td>
+
+                                <td
+                                    id="observationUsed"
+                                >
+                                    —
+                                </td>
+
+                                <td
+                                    id="observationEndpoint"
+                                >
+                                    —
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             RESULT
+        ================================================== -->
+
+        <section
+            class="practical-section"
+            id="result"
+        >
+
+            <div class="container">
+
+                <div class="result-card">
+
+                    <div class="result-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <span>
+                            RESULT
+                        </span>
+
+                        <h2 id="resultHeading">
+                            Complete the virtual titration
+                            to obtain the result.
+                        </h2>
+
+                        <p id="resultText">
+                            At the endpoint, the volume of
+                            standard NaOH used will be used
+                            to determine the concentration
+                            of the HCl sample.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             QUIZ
+        ================================================== -->
+
+        <section
+            class="quiz-section"
+            id="quiz"
+        >
+
+            <div class="container">
+
+                <div class="section-heading-simple">
+
+                    <span>
+                        09 • QUICK QUIZ
+                    </span>
+
+                    <h2>
+                        Check Your Understanding
+                    </h2>
+
+                </div>
+
+
+                <div class="quiz-card">
+
+
+                    <!-- QUESTION 1 -->
+
+                    <div
+                        class="quiz-question"
+                        data-question="1"
+                    >
+
+                        <span>
+                            Question 1 of 3
+                        </span>
+
+                        <h3>
+                            Which solution is placed in
+                            the burette?
+                        </h3>
+
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q1"
+                                value="a"
+                            >
+
+                            Hydrochloric acid
+
+                        </label>
+
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q1"
+                                value="b"
+                            >
+
+                            Sodium hydroxide
+
+                        </label>
+
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q1"
+                                value="c"
+                            >
+
+                            Phenolphthalein
+
+                        </label>
+
+                    </div>
+
+
+
+                    <!-- QUESTION 2 -->
+
+                    <div
+                        class="quiz-question"
+                        data-question="2"
+                    >
+
+                        <span>
+                            Question 2 of 3
+                        </span>
+
+                        <h3>
+                            What indicates the endpoint
+                            in this experiment?
+                        </h3>
+
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q2"
+                                value="a"
+                            >
+
+                            Permanent faint pink colour
+
+                        </label>
+
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q2"
+                                value="b"
+                            >
+
+                            Blue precipitate
+
+                        </label>
+
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q2"
+                                value="c"
+                            >
+
+                            Gas bubbles
+
+                        </label>
+
+                    </div>
+
+
+
+                    <!-- QUESTION 3 -->
+
+                    <div
+                        class="quiz-question"
+                        data-question="3"
+                    >
+
+                        <span>
+                            Question 3 of 3
+                        </span>
+
+                        <h3>
+                            What type of reaction occurs
+                            between HCl and NaOH?
+                        </h3>
+
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q3"
+                                value="a"
+                            >
+
+                            Combustion
+
+                        </label>
+
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q3"
+                                value="b"
+                            >
+
+                            Neutralization
+
+                        </label>
+
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q3"
+                                value="c"
+                            >
+
+                            Decomposition
+
+                        </label>
+
+                    </div>
+
+
+
+                    <button
+                        type="button"
+                        class="quiz-submit"
+                        id="quizSubmit"
+                    >
+                        Check Answers
+                    </button>
+
+
+                    <div
+                        class="quiz-result"
+                        id="quizResult"
+                    ></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PREVIOUS / NEXT
+        ================================================== -->
+
+        <section class="practical-navigation">
+
+            <div class="container">
+
+                <a
+                    href="../../experiments.html"
+                    class="practical-nav-card"
+                >
+
+                    <span>
+                        ←
+                    </span>
+
+                    <div>
+
+                        <small>
+                            BACK
+                        </small>
+
+                        <strong>
+                            All Experiments
+                        </strong>
+
+                    </div>
+
+                </a>
+
+
+                <a
+                    href="../practical-02/index.html"
+                    class="practical-nav-card next"
+                >
+
+                    <div>
+
+                        <small>
+                            NEXT PRACTICAL
+                        </small>
+
+                        <strong>
+                            Determination of pH
+                        </strong>
+
+                    </div>
+
+                    <span>
+                        →
+                    </span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =================================================
+         FOOTER
+    ================================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+
+            <div class="footer-main">
+
+
+                <!-- BRAND -->
+
+                <div class="footer-brand">
+
+                    <a
+                        href="../../index.html"
+                        class="brand"
+                    >
+
+                        <div class="brand-icon">
+                            ⚗
+                        </div>
+
+                        <div class="brand-text">
+
+                            <div>
+
+                                <span class="brand-hindi">
+                                    रसायन
+                                </span>
+
+                                <span class="brand-english">
+                                    Verse
+                                </span>
+
+                            </div>
+
+                            <small>
+                                VIRTUAL CHEMISTRY LAB
+                            </small>
+
+                        </div>
+
+                    </a>
+
+
+                    <p>
+                        An interactive virtual chemistry
+                        laboratory designed to help students
+                        understand chemistry through guided
+                        practical learning.
+                    </p>
+
+                </div>
+
+
+
+                <!-- PLATFORM -->
+
+                <div class="footer-column">
+
+                    <h3>
+                        Platform
+                    </h3>
+
+                    <a href="../../index.html">
+                        Home
+                    </a>
+
+                    <a href="../../experiments.html">
+                        Experiments
+                    </a>
+
+                    <a href="../../learn-chemistry.html">
+                        Learn Chemistry
+                    </a>
+
+                    <a href="../../periodic-table.html">
+                        Periodic Table
+                    </a>
+
+                </div>
+
+
+
+                <!-- INFORMATION -->
+
+                <div class="footer-column">
+
+                    <h3>
+                        Information
+                    </h3>
+
+                    <a href="../../about.html">
+                        About Us
+                    </a>
+
+                    <a href="../../contact.html">
+                        Contact
+                    </a>
+
+                </div>
+
+
+
+                <!-- LAB STATUS -->
+
+                <div
+                    class="footer-column footer-lab-status"
+                >
+
+                    <h3>
+                        Laboratory
+                    </h3>
+
+                    <div class="footer-status">
+
+                        <span></span>
+
+                        Virtual Lab Online
+
+                    </div>
+
+                    <p>
+                        Learn. Experiment. Understand.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FOOTER BOTTOM -->
+
+            <div class="footer-bottom">
+
+                <span>
+                    ©
+                    <span data-current-year>
+                        2026
+                    </span>
+                    RasayanVerse. All rights reserved.
+                </span>
+
+                <span>
+                    Built for Chemistry Learning.
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =================================================
+         JAVASCRIPT
+    ================================================== -->
+
+    <script
+        src="../../js/theme.js"
+    ></script>
+
+    <script
+        src="../../js/main.js"
+    ></script>
+
+    <script
+        src="practical.js"
+    ></script>
+
+
+</body>
+
+</html>

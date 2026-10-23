@@ -1,0 +1,321 @@
+
+/* RasayanVerse Learn Chemistry page — extends the existing Home UI */
+.learn-hero {
+    padding: 76px 0 48px;
+    background:
+        radial-gradient(circle at 88% 18%, rgba(59,130,246,.10), transparent 30%),
+        radial-gradient(circle at 8% 82%, rgba(15,139,141,.08), transparent 26%),
+        var(--bg);
+    overflow: hidden;
+}
+.learn-hero-grid {
+    display:grid;
+    grid-template-columns: 1.05fr .95fr;
+    gap:56px;
+    align-items:center;
+}
+.learn-hero-copy h1 {
+    margin:16px 0 16px;
+    font-size:clamp(42px,5vw,68px);
+    line-height:1.02;
+    letter-spacing:-2px;
+}
+.learn-hero-copy h1 span { color:var(--primary); }
+.learn-hero-copy > p {
+    max-width:680px;
+    font-size:18px;
+    line-height:1.75;
+    color:var(--text-soft);
+}
+.learn-hero .hero-buttons { display:flex; gap:12px; flex-wrap:wrap; margin-top:28px; }
+.learn-hero .hero-stats { display:flex; gap:28px; margin-top:34px; flex-wrap:wrap; }
+.learn-hero .hero-stats div { display:flex; flex-direction:column; gap:3px; }
+.learn-hero .hero-stats strong { font-size:25px; color:var(--text); }
+.learn-hero .hero-stats span { color:var(--text-muted); font-size:13px; }
+
+.learn-visual-card {
+    min-height:440px;
+    border:1px solid var(--border);
+    border-radius:var(--radius-xl);
+    background:linear-gradient(145deg,var(--surface),var(--surface-soft));
+    box-shadow:var(--shadow-lg);
+    padding:24px;
+    position:relative;
+}
+.visual-window {
+    min-height:390px;
+    border-radius:22px;
+    border:1px solid var(--border);
+    background:var(--surface);
+    overflow:hidden;
+    position:relative;
+}
+.visual-window-top {
+    height:46px;
+    border-bottom:1px solid var(--border);
+    display:flex;
+    align-items:center;
+    gap:7px;
+    padding:0 17px;
+    color:var(--text-muted);
+    font-size:11px;
+    letter-spacing:1px;
+}
+.visual-window-top span { width:8px; height:8px; border-radius:50%; background:var(--border); }
+.visual-window-top b { margin-left:auto; font-weight:700; }
+.atom-visual { width:260px; height:260px; margin:34px auto 0; position:relative; }
+.orbit { position:absolute; inset:30px; border:2px solid var(--border); border-radius:50%; transform:rotate(55deg); }
+.orbit-b { transform:rotate(-55deg) scaleY(.62); }
+.orbit-c { transform:rotate(0deg) scaleY(.62); }
+.nucleus {
+    position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+    width:78px; height:78px; border-radius:50%; display:grid; place-items:center;
+    background:var(--surface-blue); border:2px solid var(--primary-light);
+    color:var(--primary); font-size:32px; font-weight:800;
+}
+.electron { position:absolute; width:12px; height:12px; border-radius:50%; background:var(--teal); box-shadow:0 0 0 5px color-mix(in srgb,var(--teal) 12%,transparent); }
+.e1{left:38px;top:91px}.e2{right:42px;top:82px}.e3{left:124px;bottom:26px}
+.formula-strip {
+    margin:0 22px; padding:13px 15px; border:1px dashed var(--border);
+    border-radius:12px; background:var(--surface-soft); color:var(--text);
+    text-align:center; font-weight:700; font-size:13px;
+}
+.mini-lab { display:flex; justify-content:center; gap:26px; align-items:flex-end; height:72px; }
+.mini-flask,.mini-beaker,.mini-testtube { display:block; position:relative; border:2px solid var(--primary); background:var(--surface-blue); }
+.mini-flask { width:38px;height:45px; clip-path:polygon(38% 0,62% 0,62% 30%,90% 84%,82% 100%,18% 100%,10% 84%,38% 30%); }
+.mini-beaker { width:46px;height:35px;border-radius:3px 3px 10px 10px; }
+.mini-testtube { width:18px;height:52px;border-radius:0 0 12px 12px; }
+
+.section-heading { align-items:flex-end; }
+.section-heading .eyebrow,.tip-card .eyebrow { color:var(--primary); font-weight:800; letter-spacing:1.5px; font-size:11px; }
+.section-heading h2 { margin:8px 0 7px; }
+.section-heading p { margin:0; color:var(--text-soft); }
+.topic-count {
+    white-space:nowrap; padding:10px 14px; border-radius:999px;
+    background:var(--surface-blue); color:var(--primary); font-weight:800;
+    border:1px solid var(--border);
+}
+.learn-controls { display:grid; grid-template-columns:1fr 220px; gap:14px; margin-top:28px; }
+.search-box {
+    height:50px; display:flex; align-items:center; gap:10px; padding:0 15px;
+    background:var(--surface); border:1px solid var(--border); border-radius:13px;
+}
+.search-box span { font-size:24px; color:var(--text-muted); }
+.search-box input {
+    width:100%; border:0; outline:0; background:transparent; color:var(--text);
+    font:inherit;
+}
+.learn-controls select {
+    height:50px; border:1px solid var(--border); border-radius:13px;
+    background:var(--surface); color:var(--text); padding:0 14px; font:inherit;
+}
+.topics-section { padding:0 0 72px; }
+.topics-grid {
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:18px;
+}
+.topic-card {
+    background:var(--surface); border:1px solid var(--border); border-radius:20px;
+    padding:20px; box-shadow:var(--shadow-sm); transition:.22s ease;
+    cursor:pointer; position:relative; overflow:hidden;
+}
+.topic-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-md); border-color:var(--primary-light); }
+.topic-card-top { display:flex; justify-content:space-between; gap:12px; align-items:flex-start; }
+.topic-number {
+    width:34px;height:34px;border-radius:10px;display:grid;place-items:center;
+    background:var(--surface-blue); color:var(--primary); font-weight:800;font-size:12px;
+}
+.topic-category { font-size:10px; letter-spacing:.8px; text-transform:uppercase; color:var(--text-muted); font-weight:800; }
+.topic-card h3 { margin:17px 0 7px; font-size:19px; }
+.topic-card p { margin:0; color:var(--text-soft); line-height:1.6; font-size:13px; min-height:63px; }
+.topic-formula {
+    margin-top:16px; padding:10px 11px; border-radius:10px; background:var(--surface-soft);
+    color:var(--text); font-weight:800; font-family:ui-monospace,SFMono-Regular,Consolas,monospace;
+    font-size:12px; overflow:auto; white-space:nowrap;
+}
+.topic-open { margin-top:15px; color:var(--primary); font-weight:800; font-size:12px; }
+.topic-open::after { content:"  →"; }
+.no-results { text-align:center; padding:60px 20px; color:var(--text-soft); }
+.no-results div { font-size:40px; }
+.no-results h3 { color:var(--text); margin:10px 0 5px; }
+
+.chemistry-tip { padding-top:0; }
+.tip-card {
+    display:flex; gap:20px; align-items:center; padding:28px;
+    border:1px solid var(--border); border-radius:22px;
+    background:linear-gradient(135deg,var(--surface-blue),var(--surface));
+}
+.tip-icon {
+    flex:0 0 52px; width:52px;height:52px;border-radius:15px;display:grid;place-items:center;
+    background:var(--surface); border:1px solid var(--border); color:var(--primary); font-size:22px;
+}
+.tip-card h2 { margin:7px 0; font-size:23px; }
+.tip-card p { margin:0;color:var(--text-soft);line-height:1.65; }
+
+.topic-modal { position:fixed; inset:0; z-index:1000; display:none; }
+.topic-modal.open { display:block; }
+.modal-backdrop { position:absolute; inset:0; background:rgba(7,17,31,.62); backdrop-filter:blur(5px); }
+.topic-modal-card {
+    position:relative; width:min(980px,calc(100% - 30px)); max-height:calc(100vh - 40px);
+    overflow:auto; margin:20px auto; background:var(--surface); border:1px solid var(--border);
+    border-radius:26px; box-shadow:var(--shadow-lg);
+}
+.modal-close {
+    position:absolute; right:17px; top:15px; width:42px;height:42px;border-radius:12px;
+    border:1px solid var(--border); background:var(--surface); color:var(--text);
+    font-size:26px; cursor:pointer; z-index:2;
+}
+.modal-content { padding:36px; }
+.modal-head { padding-right:50px; }
+.modal-kicker { color:var(--primary); font-size:11px; letter-spacing:1.4px; font-weight:900; text-transform:uppercase; }
+.modal-head h2 { font-size:34px; margin:8px 0; }
+.modal-head p { color:var(--text-soft); line-height:1.7; }
+.modal-layout { display:grid; grid-template-columns:.85fr 1.15fr; gap:24px; margin-top:24px; }
+.topic-visual-box,.detail-box {
+    border:1px solid var(--border); border-radius:18px; background:var(--surface-soft); padding:20px;
+}
+.topic-visual-box svg { width:100%; height:240px; display:block; }
+.detail-box h3 { margin:0 0 12px; font-size:15px; }
+.detail-box p { color:var(--text-soft); line-height:1.75; }
+.formula-large {
+    display:inline-block; padding:12px 15px; margin:4px 0 14px; border-radius:11px;
+    background:var(--surface-blue); color:var(--primary); font-weight:900;
+    font-family:ui-monospace,SFMono-Regular,Consolas,monospace;
+}
+.example-box {
+    margin-top:15px; padding:15px; border-left:4px solid var(--teal);
+    background:var(--surface); border-radius:10px;
+}
+.example-box strong { display:block; color:var(--text); margin-bottom:6px; }
+.example-box p { margin:0; }
+.key-points { display:grid; gap:9px; margin-top:14px; }
+.key-point { display:flex; gap:9px; color:var(--text-soft); line-height:1.55; }
+.key-point b { color:var(--teal); }
+
+@media (max-width:980px) {
+    .learn-hero-grid { grid-template-columns:1fr; }
+    .learn-visual-card { max-width:700px; width:100%; margin:auto; }
+    .topics-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media (max-width:680px) {
+    .learn-hero { padding-top:48px; }
+    .learn-controls { grid-template-columns:1fr; }
+    .topics-grid { grid-template-columns:1fr; }
+    .modal-layout { grid-template-columns:1fr; }
+    .modal-content { padding:24px; }
+    .topic-modal-card { max-height:calc(100vh - 20px); margin:10px auto; }
+    .learn-hero-copy h1 { letter-spacing:-1px; }
+    .tip-card { align-items:flex-start; }
+}
+
+
+/* Learn Chemistry footer — matches the RasayanVerse reference footer */
+.learn-footer {
+    background: #071525;
+    color: #d7e2ef;
+    margin-top: 0;
+}
+[data-theme="dark"] .learn-footer {
+    background: #071525;
+}
+.learn-footer-grid {
+    display: grid;
+    grid-template-columns: 2.05fr 1fr 1fr 1fr;
+    gap: 70px;
+    padding-top: 62px;
+    padding-bottom: 56px;
+}
+.learn-footer .footer-brand {
+    display: inline-flex;
+    text-decoration: none;
+}
+.learn-footer-brand > p {
+    max-width: 475px;
+    margin: 25px 0 0;
+    color: #8fa9c7;
+    line-height: 1.8;
+    font-size: 15px;
+}
+.learn-footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.learn-footer-column h4 {
+    margin: 3px 0 24px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 800;
+}
+.learn-footer-column a {
+    color: #8fa9c7;
+    text-decoration: none;
+    margin-bottom: 17px;
+    font-size: 15px;
+    transition: color .2s ease;
+}
+.learn-footer-column a:hover {
+    color: #ffffff;
+}
+.learn-footer-lab .lab-online {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    border: 1px solid #29405a;
+    border-radius: 999px;
+    padding: 11px 14px;
+    color: #e8f0f8;
+    font-weight: 700;
+    font-size: 14px;
+    white-space: nowrap;
+}
+.learn-footer-lab .lab-online span {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #49e18b;
+    box-shadow: 0 0 0 5px rgba(73,225,139,.08);
+}
+.learn-footer-lab > p {
+    margin: 22px 0 0;
+    color: #718baa;
+    font-size: 14px;
+}
+.learn-footer-bottom {
+    border-top: 1px solid #20364d;
+    padding-top: 29px;
+    padding-bottom: 25px;
+    color: #6f89a8;
+    font-size: 13px;
+}
+@media (max-width: 900px) {
+    .learn-footer-grid {
+        grid-template-columns: 1.6fr 1fr 1fr;
+        gap: 40px;
+    }
+    .learn-footer-lab { grid-column: 2 / -1; }
+}
+@media (max-width: 650px) {
+    .learn-footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px 24px;
+        padding-top: 45px;
+    }
+    .learn-footer-brand { grid-column: 1 / -1; }
+    .learn-footer-lab { grid-column: auto; }
+    .learn-footer-bottom {
+        gap: 12px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+@media (max-width: 460px) {
+    .learn-footer-grid { grid-template-columns: 1fr; }
+    .learn-footer-brand, .learn-footer-lab { grid-column: auto; }
+}
+
+
+/* Shared RasayanVerse shell normalization */
+.footer .brand { text-decoration:none; }
+.footer a { text-decoration:none; }

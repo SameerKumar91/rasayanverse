@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="RasayanVerse interactive periodic table with 118 elements.">
+<title>Periodic Table | RasayanVerse</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/laboratory.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="periodic-table.css">
+<style>
+/* Periodic table desktop geometry */
+@media (min-width:981px){
+  #periodicWorkspace > .container{width:min(1500px,calc(100% - 32px));max-width:1500px}
+  .pt-layout{grid-template-columns:minmax(0,1fr) 320px;gap:22px}
+  .pt-table-card{padding:24px}
+  .periodic-grid{min-width:1180px;grid-template-columns:repeat(18,minmax(58px,1fr));grid-template-rows:repeat(7,86px);gap:6px}
+  .pt-table-card .group-row{grid-template-columns:repeat(18,minmax(58px,1fr))}
+  .pt-table-card .period-labels{grid-template-rows:repeat(7,86px)}
+  .element{padding:7px 6px;border-radius:9px}
+  .element .num{font-size:.55rem}
+  .element .sym{font-size:1.28rem;margin-top:4px}
+  .element .nm{font-size:.52rem;margin-top:2px}
+  .element .mass{font-size:.45rem;margin-top:2px}
+  .f-grid{grid-template-columns:repeat(14,minmax(58px,1fr));gap:6px}
+}
+@media (min-width:981px) and (max-width:1250px){
+  #periodicWorkspace > .container{width:calc(100% - 28px)}
+  .pt-layout{grid-template-columns:minmax(0,1fr) 300px}
+  .periodic-grid{min-width:1080px;grid-template-rows:repeat(7,76px)}
+}
+</style>
+</head>
+<body>
+<header
+        class="navbar"
+        id="navbar"
+    >
+
+        <div class="container navbar-inner">
+
+
+            <!-- BRAND -->
+
+            <a
+                href="index.html"
+                class="brand"
+                aria-label="RasayanVerse Home"
+            >
+
+                <div class="brand-icon">
+                    ⚗
+                </div>
+
+                <div class="brand-text">
+
+                    <div>
+
+                        <span class="brand-hindi">
+                            रसायन
+                        </span>
+
+                        <span class="brand-english">
+                            Verse
+                        </span>
+
+                    </div>
+
+                    <small>
+                        VIRTUAL CHEMISTRY LAB
+                    </small>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- DESKTOP NAVIGATION -->
+
+            <nav
+                class="desktop-nav"
+                aria-label="Main navigation"
+            >
+
+                <a
+                    href="index.html" class="nav-link"
+                >
+                    Home
+                </a>
+
+                <a
+                    href="experiments.html"
+                    class="nav-link"
+                >
+                    Experiments
+                </a>
+
+                <a
+                    href="learn-chemistry.html"
+                    class="nav-link"
+                >
+                    Learn Chemistry
+                </a>
+
+                <a
+                    href="periodic-table.html"
+                    class="nav-link" active
+                >
+                    Periodic Table
+                </a>
+
+                <a
+                    href="about.html"
+                    class="nav-link"
+                >
+                    About
+                </a>
+
+                <a
+                    href="contact.html"
+                    class="nav-link"
+                >
+                    Contact
+                </a>
+
+            </nav>
+
+
+
+            <!-- NAV ACTIONS -->
+
+            <div class="navbar-actions">
+
+
+                <!-- THEME -->
+
+                <button
+                    type="button"
+                    class="theme-toggle"
+                    id="themeToggle"
+                    aria-label="Switch to dark mode"
+                    title="Switch to dark mode"
+                >
+
+                    <span
+                        class="theme-icon"
+                        id="themeIcon"
+                    >
+                        ☾
+                    </span>
+
+                </button>
+
+
+                <!-- DESKTOP CTA -->
+
+                <a
+                    href="experiments.html"
+                    class="nav-cta"
+                >
+
+                    <span>🧪</span>
+
+                    Enter Lab
+
+                </a>
+
+
+                <!-- MOBILE MENU -->
+
+                <button
+                    type="button"
+                    class="mobile-menu-button"
+                    id="mobileMenuButton"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                >
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- MOBILE NAVIGATION -->
+
+        <nav
+            class="mobile-nav"
+            id="mobileNav"
+            aria-label="Mobile navigation"
+        >
+
+            <a
+                href="index.html" class="mobile-nav-link"
+            >
+                Home
+            </a>
+
+            <a
+                href="experiments.html"
+                class="mobile-nav-link"
+            >
+                Experiments
+            </a>
+
+            <a
+                href="learn-chemistry.html"
+                class="mobile-nav-link"
+            >
+                Learn Chemistry
+            </a>
+
+            <a
+                href="periodic-table.html"
+                class="mobile-nav-link" active
+            >
+                Periodic Table
+            </a>
+
+            <a
+                href="about.html"
+                class="mobile-nav-link"
+            >
+                About
+            </a>
+
+            <a
+                href="contact.html"
+                class="mobile-nav-link"
+            >
+                Contact
+            </a>
+
+            <a
+                href="experiments.html"
+                class="mobile-lab-button"
+            >
+                🧪 Enter Virtual Lab
+            </a>
+
+        </nav>
+
+    </header>
+
+<main>
+<section class="pt-hero">
+ <div class="container pt-hero-grid">
+  <div class="pt-hero-copy">
+   <div class="hero-badge"><span class="status-dot"></span> Interactive Chemistry Reference</div>
+   <h1>Explore the <span>Periodic Table.</span></h1>
+   <p>Discover all 118 elements, their properties and place in the periodic table. Hover to preview an element and click to keep its details beside the table.</p>
+   <div class="hero-buttons"><a class="button button-primary" href="#periodicWorkspace">🔬 Explore Elements <span>→</span></a><a class="button button-secondary" href="learn-chemistry.html">Learn Chemistry <span>→</span></a></div>
+   <div class="hero-stats">
+    <div class="hero-stat"><strong>118</strong><span>Periodic Table<br>Elements</span></div><div class="hero-stat-divider"></div>
+    <div class="hero-stat"><strong>18</strong><span>Groups<br>in the Table</span></div><div class="hero-stat-divider"></div>
+    <div class="hero-stat"><strong>7</strong><span>Periods<br>in the Table</span></div>
+   </div>
+  </div>
+  <div class="pt-hero-card">
+   <div class="pt-card-head"><span>RASAYANVERSE</span><strong>ELEMENT MAP</strong><i></i></div>
+   <div class="atom-visual"><div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div><div class="atom-nucleus">118</div><span class="electron e1"></span><span class="electron e2"></span><span class="electron e3"></span></div>
+   <div class="pt-card-foot"><span>118 ELEMENTS</span><span>READY TO EXPLORE</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="section pt-section" id="periodicWorkspace">
+ <div class="container">
+  <div class="section-heading"><div><span class="section-label">CHEMISTRY REFERENCE</span><h2>Interactive Periodic Table</h2></div><p>Hover an element for a quick preview. Click it to pin the details in the panel.</p></div>
+  <div class="pt-tools">
+   <div class="pt-search"><span>⌕</span><input id="elementSearch" type="search" placeholder="Search element, symbol or atomic number..." aria-label="Search elements"></div>
+   <select id="typeFilter" aria-label="Filter by element type"><option value="all">All element types</option><option>Alkali Metal</option><option>Alkaline Earth Metal</option><option>Transition Metal</option><option>Post-transition Metal</option><option>Metalloid</option><option>Nonmetal</option><option>Halogen</option><option>Noble Gas</option><option>Lanthanide</option><option>Actinide</option></select>
+   <button id="clearFilters" class="pt-reset" type="button">Reset</button>
+  </div>
+  <div class="pt-layout">
+   <div class="pt-table-card">
+    <div class="pt-card-title"><div><span class="section-label">118 ELEMENTS</span><h3>Element Map</h3></div><span id="resultCount">118 / 118</span></div>
+    <div id="legend" class="pt-legend"></div>
+    <div class="pt-scroll"><div id="periodicGrid" class="periodic-grid"></div></div>
+    <div class="f-blocks"><div class="f-label">Lanthanides</div><div id="lanthanides" class="f-grid"></div><div class="f-label">Actinides</div><div id="actinides" class="f-grid"></div></div>
+   </div>
+   <aside class="pt-details" id="detailsPanel">
+    <div class="pt-details-head"><span>ELEMENT DETAILS</span><button type="button" id="closeDetails" aria-label="Clear selected element">×</button></div>
+    <div id="detailsEmpty" class="details-empty"><div class="empty-orbit">⚗</div><h3>Choose an element</h3><p>Hover over any element to preview its information here. Click an element to pin it.</p><div class="hint">Try <b>H</b>, <b>Fe</b>, <b>Au</b> or <b>118</b>.</div></div>
+    <article id="elementDetails" class="element-details" hidden>
+      <div class="detail-identity"><span id="dNumber">1</span><strong id="dSymbol">H</strong><b id="dName">Hydrogen</b><small id="dType">Nonmetal</small></div>
+      <div class="detail-copy"><span class="section-label" id="dCategory">NONMETAL</span><h3 id="dTitle">Hydrogen</h3><p id="dSummary"></p></div>
+      <div class="detail-facts">
+       <div><small>Atomic Weight</small><b id="dWeight"></b><em>u</em></div><div><small>Discovered</small><b id="dYear"></b></div>
+       <div><small>State at 20°C</small><b id="dState"></b></div><div><small>Group</small><b id="dGroup"></b></div>
+       <div><small>Period</small><b id="dPeriod"></b></div><div><small>Atomic Number</small><b id="dAtomic"></b></div>
+      </div>
+      <div class="detail-note"><span>✦</span><p id="dNote"></p></div>
+    </article>
+   </aside>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer class="footer">
+
+        <div class="container">
+
+
+            <div class="footer-main">
+
+
+                <!-- BRAND -->
+
+                <div class="footer-brand">
+
+                    <a
+                        href="index.html"
+                        class="brand"
+                    >
+
+                        <div class="brand-icon">
+                            ⚗
+                        </div>
+
+                        <div class="brand-text">
+
+                            <div>
+
+                                <span class="brand-hindi">
+                                    रसायन
+                                </span>
+
+                                <span class="brand-english">
+                                    Verse
+                                </span>
+
+                            </div>
+
+                            <small>
+                                VIRTUAL CHEMISTRY LAB
+                            </small>
+
+                        </div>
+
+                    </a>
+
+
+                    <p>
+                        An interactive virtual chemistry
+                        laboratory designed to help students
+                        understand chemistry through guided
+                        practical learning.
+                    </p>
+
+                </div>
+
+
+
+                <!-- PLATFORM -->
+
+                <div class="footer-column">
+
+                    <h3>
+                        Platform
+                    </h3>
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <a href="experiments.html">
+                        Experiments
+                    </a>
+
+                    <a href="learn-chemistry.html">
+                        Learn Chemistry
+                    </a>
+
+                    <a href="periodic-table.html">
+                        Periodic Table
+                    </a>
+
+                </div>
+
+
+
+                <!-- INFORMATION -->
+
+                <div class="footer-column">
+
+                    <h3>
+                        Information
+                    </h3>
+
+                    <a href="about.html">
+                        About Us
+                    </a>
+
+                    <a href="contact.html">
+                        Contact
+                    </a>
+
+                </div>
+
+
+
+                <!-- LAB STATUS -->
+
+                <div
+                    class="footer-column footer-lab-status"
+                >
+
+                    <h3>
+                        Laboratory
+                    </h3>
+
+                    <div class="footer-status">
+
+                        <span></span>
+
+                        Virtual Lab Online
+
+                    </div>
+
+                    <p>
+                        Learn. Experiment. Understand.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FOOTER BOTTOM -->
+
+            <div class="footer-bottom">
+
+                <span>
+                    ©
+                    <span data-current-year>
+                        2026
+                    </span>
+                    RasayanVerse. All rights reserved.
+                </span>
+
+                <span>
+                    Built for Chemistry Learning.
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+<script src="js/theme.js"></script>
+<script src="js/main.js"></script>
+<script src="periodic-table.js"></script>
+</body></html>

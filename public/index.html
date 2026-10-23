@@ -1,0 +1,2027 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="RasayanVerse is an interactive virtual chemistry laboratory where students can learn chemistry through guided practical experiments."
+    >
+
+    <meta
+        name="theme-color"
+        content="#1554a3"
+    >
+
+    <title>
+        RasayanVerse | Virtual Chemistry Laboratory
+    </title>
+
+
+    <!-- =====================================================
+         PRECONNECT / FONT
+    ====================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/laboratory.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/responsive.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         PAGE LOADER
+    ====================================================== -->
+
+    <div
+        class="page-loader"
+        id="pageLoader"
+    >
+
+        <div class="loader-flask">
+
+            <div class="loader-liquid"></div>
+
+        </div>
+
+        <p>
+            Preparing your laboratory...
+        </p>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header
+        class="navbar"
+        id="navbar"
+    >
+
+        <div class="container navbar-inner">
+
+
+            <!-- BRAND -->
+
+            <a
+                href="index.html"
+                class="brand"
+                aria-label="RasayanVerse Home"
+            >
+
+                <div class="brand-icon">
+                    ⚗
+                </div>
+
+                <div class="brand-text">
+
+                    <div>
+
+                        <span class="brand-hindi">
+                            रसायन
+                        </span>
+
+                        <span class="brand-english">
+                            Verse
+                        </span>
+
+                    </div>
+
+                    <small>
+                        VIRTUAL CHEMISTRY LAB
+                    </small>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- DESKTOP NAVIGATION -->
+
+            <nav
+                class="desktop-nav"
+                aria-label="Main navigation"
+            >
+
+                <a
+                    href="index.html" class="nav-link" active
+                >
+                    Home
+                </a>
+
+                <a
+                    href="experiments.html"
+                    class="nav-link"
+                >
+                    Experiments
+                </a>
+
+                <a
+                    href="learn-chemistry.html"
+                    class="nav-link"
+                >
+                    Learn Chemistry
+                </a>
+
+                <a
+                    href="periodic-table.html"
+                    class="nav-link"
+                >
+                    Periodic Table
+                </a>
+
+                <a
+                    href="about.html"
+                    class="nav-link"
+                >
+                    About
+                </a>
+
+                <a
+                    href="contact.html"
+                    class="nav-link"
+                >
+                    Contact
+                </a>
+
+            </nav>
+
+
+
+            <!-- NAV ACTIONS -->
+
+            <div class="navbar-actions">
+
+
+                <!-- THEME -->
+
+                <button
+                    type="button"
+                    class="theme-toggle"
+                    id="themeToggle"
+                    aria-label="Switch to dark mode"
+                    title="Switch to dark mode"
+                >
+
+                    <span
+                        class="theme-icon"
+                        id="themeIcon"
+                    >
+                        ☾
+                    </span>
+
+                </button>
+
+
+                <!-- DESKTOP CTA -->
+
+                <a
+                    href="experiments.html"
+                    class="nav-cta"
+                >
+
+                    <span>🧪</span>
+
+                    Enter Lab
+
+                </a>
+
+
+                <!-- MOBILE MENU -->
+
+                <button
+                    type="button"
+                    class="mobile-menu-button"
+                    id="mobileMenuButton"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                >
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- MOBILE NAVIGATION -->
+
+        <nav
+            class="mobile-nav"
+            id="mobileNav"
+            aria-label="Mobile navigation"
+        >
+
+            <a
+                href="index.html" class="mobile-nav-link" active
+            >
+                Home
+            </a>
+
+            <a
+                href="experiments.html"
+                class="mobile-nav-link"
+            >
+                Experiments
+            </a>
+
+            <a
+                href="learn-chemistry.html"
+                class="mobile-nav-link"
+            >
+                Learn Chemistry
+            </a>
+
+            <a
+                href="periodic-table.html"
+                class="mobile-nav-link"
+            >
+                Periodic Table
+            </a>
+
+            <a
+                href="about.html"
+                class="mobile-nav-link"
+            >
+                About
+            </a>
+
+            <a
+                href="contact.html"
+                class="mobile-nav-link"
+            >
+                Contact
+            </a>
+
+            <a
+                href="experiments.html"
+                class="mobile-lab-button"
+            >
+                🧪 Enter Virtual Lab
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+
+        <section class="hero-section">
+
+            <!-- Chemistry background decorations -->
+
+            <div class="hero-decoration hero-decoration-one">
+                H₂O
+            </div>
+
+            <div class="hero-decoration hero-decoration-two">
+                NaCl
+            </div>
+
+            <div class="hero-decoration hero-decoration-three">
+                pH
+            </div>
+
+            <div class="hero-decoration hero-decoration-four">
+                ⚗
+            </div>
+
+
+            <div class="container hero-grid">
+
+
+                <!-- =========================================
+                     HERO CONTENT
+                ========================================== -->
+
+                <div class="hero-content">
+
+
+                    <div class="hero-badge">
+
+                        <span class="status-dot"></span>
+
+                        Interactive Chemistry Laboratory
+
+                    </div>
+
+
+                    <h1>
+
+                        Learn Chemistry
+
+                        <span>
+                            by Doing Chemistry.
+                        </span>
+
+                    </h1>
+
+
+                    <p class="hero-description">
+
+                        Welcome to RasayanVerse — a virtual
+                        chemistry laboratory where you can
+                        understand experiments, follow guided
+                        procedures, interact with laboratory
+                        equipment and observe chemical
+                        reactions in a simple and engaging way.
+
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="experiments.html"
+                            class="button button-primary"
+                        >
+
+                            🧪
+
+                            Explore Experiments
+
+                            <span>→</span>
+
+                        </a>
+
+
+                        <a
+                            href="#how-it-works"
+                            class="button button-secondary"
+                        >
+
+                            How It Works
+
+                            <span>↓</span>
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- HERO STATS -->
+
+                    <div class="hero-stats">
+
+
+                        <div class="hero-stat">
+
+                            <strong>
+                                15
+                            </strong>
+
+                            <span>
+                                Practical<br>
+                                Experiments
+                            </span>
+
+                        </div>
+
+
+                        <div class="hero-stat-divider"></div>
+
+
+                        <div class="hero-stat">
+
+                            <strong>
+                                118
+                            </strong>
+
+                            <span>
+                                Periodic Table<br>
+                                Elements
+                            </span>
+
+                        </div>
+
+
+                        <div class="hero-stat-divider"></div>
+
+
+                        <div class="hero-stat">
+
+                            <strong>
+                                100%
+                            </strong>
+
+                            <span>
+                                Guided<br>
+                                Learning
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =========================================
+                     VIRTUAL LAB
+                ========================================== -->
+
+                <div class="hero-laboratory">
+
+
+                    <!-- LAB HEADER -->
+
+                    <div class="lab-status">
+
+                        <span>
+                            RASAYANVERSE LAB
+                        </span>
+
+                        <span>
+                            Student Workstation
+                        </span>
+
+                        <strong>
+                            READY
+                        </strong>
+
+                        <span
+                            class="lab-status-light"
+                        ></span>
+
+                    </div>
+
+
+
+                    <!-- LAB SCENE -->
+
+                    <div class="laboratory-scene">
+
+
+                        <!-- WALL -->
+
+                        <div class="lab-wall">
+
+
+                            <div
+                                class="lab-wall-panel panel-one"
+                            ></div>
+
+
+                            <div
+                                class="lab-wall-panel panel-two"
+                            ></div>
+
+
+                            <!-- SHELF -->
+
+                            <div class="lab-shelf">
+
+                                <div
+                                    class="shelf-bottle bottle-blue"
+                                >
+                                    <span></span>
+                                </div>
+
+                                <div
+                                    class="shelf-bottle bottle-green"
+                                >
+                                    <span></span>
+                                </div>
+
+                                <div
+                                    class="shelf-bottle bottle-orange"
+                                >
+                                    <span></span>
+                                </div>
+
+                                <div
+                                    class="shelf-bottle bottle-purple"
+                                >
+                                    <span></span>
+                                </div>
+
+                            </div>
+
+
+                            <!-- FORMULAS -->
+
+                            <span
+                                class="wall-formula formula-one"
+                            >
+                                H₂O
+                            </span>
+
+                            <span
+                                class="wall-formula formula-two"
+                            >
+                                NaOH
+                            </span>
+
+                        </div>
+
+
+
+                        <!-- LIGHT -->
+
+                        <div class="lab-light"></div>
+
+
+
+                        <!-- WORKBENCH -->
+
+                        <div class="lab-workbench">
+
+
+                            <!-- BURETTE -->
+
+                            <div
+                                class="equipment burette-equipment"
+                            >
+
+                                <div class="burette-stand">
+
+                                    <div
+                                        class="burette-base"
+                                    ></div>
+
+                                    <div
+                                        class="burette-rod"
+                                    ></div>
+
+                                    <div
+                                        class="burette-clamp"
+                                    ></div>
+
+                                    <div
+                                        class="burette-glass"
+                                    >
+
+                                        <div
+                                            class="burette-liquid"
+                                        ></div>
+
+                                        <span
+                                            class="burette-mark mark-one"
+                                        ></span>
+
+                                        <span
+                                            class="burette-mark mark-two"
+                                        ></span>
+
+                                        <span
+                                            class="burette-mark mark-three"
+                                        ></span>
+
+                                        <span
+                                            class="burette-mark mark-four"
+                                        ></span>
+
+                                        <span
+                                            class="burette-mark mark-five"
+                                        ></span>
+
+                                        <div
+                                            class="burette-stopcock"
+                                        ></div>
+
+                                        <div
+                                            class="burette-drop"
+                                        ></div>
+
+                                    </div>
+
+                                </div>
+
+                                <span
+                                    class="equipment-label"
+                                >
+                                    Burette
+                                </span>
+
+                            </div>
+
+
+
+                            <!-- BEAKER -->
+
+                            <div
+                                class="equipment beaker-equipment"
+                            >
+
+                                <div class="beaker">
+
+                                    <div
+                                        class="beaker-liquid"
+                                    >
+
+                                        <div
+                                            class="liquid-wave"
+                                        ></div>
+
+                                        <span
+                                            class="bubble bubble-one"
+                                        ></span>
+
+                                        <span
+                                            class="bubble bubble-two"
+                                        ></span>
+
+                                        <span
+                                            class="bubble bubble-three"
+                                        ></span>
+
+                                    </div>
+
+                                    <span
+                                        class="beaker-line line-one"
+                                    ></span>
+
+                                    <span
+                                        class="beaker-line line-two"
+                                    ></span>
+
+                                    <span
+                                        class="beaker-line line-three"
+                                    ></span>
+
+                                    <span
+                                        class="beaker-line line-four"
+                                    ></span>
+
+                                </div>
+
+                                <span
+                                    class="equipment-label"
+                                >
+                                    Beaker
+                                </span>
+
+                            </div>
+
+
+
+                            <!-- FLASK -->
+
+                            <div
+                                class="equipment flask-equipment"
+                            >
+
+                                <div class="flask">
+
+                                    <div
+                                        class="flask-neck"
+                                    ></div>
+
+                                    <div
+                                        class="flask-body"
+                                    >
+
+                                        <div
+                                            class="flask-liquid"
+                                        >
+
+                                            <div
+                                                class="flask-wave"
+                                            ></div>
+
+                                            <span
+                                                class="flask-bubble bubble-four"
+                                            ></span>
+
+                                            <span
+                                                class="flask-bubble bubble-five"
+                                            ></span>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <span
+                                    class="equipment-label"
+                                >
+                                    Conical Flask
+                                </span>
+
+                            </div>
+
+
+
+                            <!-- TEST TUBE RACK -->
+
+                            <div
+                                class="equipment test-tube-rack"
+                            >
+
+                                <div class="test-tube test-tube-blue">
+                                    <div></div>
+                                </div>
+
+                                <div class="test-tube test-tube-pink">
+                                    <div></div>
+                                </div>
+
+                                <div class="test-tube test-tube-yellow">
+                                    <div></div>
+                                </div>
+
+                                <div class="test-tube test-tube-green">
+                                    <div></div>
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- CHEMICAL BOTTLE -->
+
+                            <div
+                                class="equipment chemical-bottle"
+                            >
+
+                                <div
+                                    class="chemical-cap"
+                                ></div>
+
+                                <div
+                                    class="chemical-neck"
+                                ></div>
+
+                                <div
+                                    class="chemical-body"
+                                >
+
+                                    <div
+                                        class="chemical-liquid"
+                                    ></div>
+
+                                    <div
+                                        class="chemical-label"
+                                    >
+
+                                        <strong>
+                                            NaOH
+                                        </strong>
+
+                                        <small>
+                                            0.1 M
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- PIPETTE -->
+
+                            <div class="equipment pipette">
+
+                                <div
+                                    class="pipette-bulb"
+                                ></div>
+
+                                <div
+                                    class="pipette-tube"
+                                ></div>
+
+                                <div
+                                    class="pipette-tip"
+                                ></div>
+
+                            </div>
+
+
+
+                            <!-- SHADOWS -->
+
+                            <div
+                                class="workbench-shadow shadow-one"
+                            ></div>
+
+                            <div
+                                class="workbench-shadow shadow-two"
+                            ></div>
+
+                            <div
+                                class="workbench-shadow shadow-three"
+                            ></div>
+
+
+                        </div>
+
+
+
+                        <!-- TABLE FRONT -->
+
+                        <div class="lab-table-front">
+
+                            <div
+                                class="table-drawer drawer-one"
+                            ></div>
+
+                            <div
+                                class="table-drawer drawer-two"
+                            ></div>
+
+                            <div
+                                class="table-handle handle-one"
+                            ></div>
+
+                            <div
+                                class="table-handle handle-two"
+                            ></div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- LAB CAPTION -->
+
+                    <div class="lab-caption">
+
+                        <div>
+
+                            <div class="caption-icon">
+                                ⚗
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Your Virtual Workbench
+                                </strong>
+
+                                <small>
+                                    Explore equipment and perform experiments
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="caption-arrow">
+                            →
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FEATURED EXPERIMENTS
+        ================================================== -->
+
+        <section
+            class="section featured-section"
+            id="experiments"
+        >
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="section-label">
+                            Explore the Laboratory
+                        </span>
+
+                        <h2>
+                            Featured Experiments
+                        </h2>
+
+                        <p>
+                            Start with a practical experiment
+                            and learn chemistry by observing
+                            what actually happens.
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="experiments.html"
+                        class="text-link"
+                    >
+
+                        View All 15 Experiments
+
+                        <span>→</span>
+
+                    </a>
+
+                </div>
+
+
+
+                <div class="experiment-grid">
+
+
+                    <!-- EXPERIMENT 01 -->
+
+                    <a
+                        href="experiments/practical-01/index.html"
+                        class="experiment-card"
+                    >
+
+                        <span class="experiment-number">
+                            01
+                        </span>
+
+                        <div
+                            class="experiment-icon icon-blue"
+                        >
+                            ⚗
+                        </div>
+
+                        <div class="experiment-content">
+
+                            <span
+                                class="experiment-category"
+                            >
+                                ACID • BASE
+                            </span>
+
+                            <h3>
+                                Acid–Base Titration
+                            </h3>
+
+                            <p>
+                                Determine concentration
+                                through a controlled
+                                titration procedure.
+                            </p>
+
+                        </div>
+
+                        <span
+                            class="experiment-arrow"
+                        >
+                            →
+                        </span>
+
+                    </a>
+
+
+
+                    <!-- EXPERIMENT 02 -->
+
+                    <a
+                        href="experiments/practical-02/index.html"
+                        class="experiment-card"
+                    >
+
+                        <span class="experiment-number">
+                            02
+                        </span>
+
+                        <div
+                            class="experiment-icon icon-teal"
+                        >
+                            pH
+                        </div>
+
+                        <div class="experiment-content">
+
+                            <span
+                                class="experiment-category"
+                            >
+                                ANALYSIS
+                            </span>
+
+                            <h3>
+                                Determination of pH
+                            </h3>
+
+                            <p>
+                                Explore acidic, neutral
+                                and basic solutions
+                                using the pH scale.
+                            </p>
+
+                        </div>
+
+                        <span
+                            class="experiment-arrow"
+                        >
+                            →
+                        </span>
+
+                    </a>
+
+
+
+                    <!-- EXPERIMENT 03 -->
+
+                    <a
+                        href="experiments/practical-03/index.html"
+                        class="experiment-card"
+                    >
+
+                        <span class="experiment-number">
+                            03
+                        </span>
+
+                        <div
+                            class="experiment-icon icon-purple"
+                        >
+                            ◉
+                        </div>
+
+                        <div class="experiment-content">
+
+                            <span
+                                class="experiment-category"
+                            >
+                                ACID • BASE
+                            </span>
+
+                            <h3>
+                                Acid–Base Indicators
+                            </h3>
+
+                            <p>
+                                Observe colour changes
+                                produced by common
+                                chemical indicators.
+                            </p>
+
+                        </div>
+
+                        <span
+                            class="experiment-arrow"
+                        >
+                            →
+                        </span>
+
+                    </a>
+
+
+
+                    <!-- EXPERIMENT 04 -->
+
+                    <a
+                        href="experiments/practical-06/index.html"
+                        class="experiment-card"
+                    >
+
+                        <span class="experiment-number">
+                            06
+                        </span>
+
+                        <div
+                            class="experiment-icon icon-orange"
+                        >
+                            ◈
+                        </div>
+
+                        <div class="experiment-content">
+
+                            <span
+                                class="experiment-category"
+                            >
+                                SEPARATION
+                            </span>
+
+                            <h3>
+                                Crystallization
+                            </h3>
+
+                            <p>
+                                Grow copper sulphate
+                                crystals through
+                                controlled cooling.
+                            </p>
+
+                        </div>
+
+                        <span
+                            class="experiment-arrow"
+                        >
+                            →
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CAPABILITIES
+        ================================================== -->
+
+        <section
+            class="section capabilities-section"
+        >
+
+            <div class="container">
+
+
+                <div class="center-heading">
+
+                    <span class="section-label">
+                        Why RasayanVerse?
+                    </span>
+
+                    <h2>
+                        A Laboratory Built for Learning
+                    </h2>
+
+                    <p>
+                        Understand the experiment before,
+                        during and after performing it.
+                    </p>
+
+                </div>
+
+
+
+                <div class="capabilities-grid">
+
+
+                    <!-- 01 -->
+
+                    <article class="capability-card">
+
+                        <span
+                            class="capability-number"
+                        >
+                            01
+                        </span>
+
+                        <div
+                            class="capability-icon blue-icon"
+                        >
+                            🧪
+                        </div>
+
+                        <h3>
+                            Interactive Practicals
+                        </h3>
+
+                        <p>
+                            Work with virtual laboratory
+                            equipment instead of simply
+                            reading a procedure.
+                        </p>
+
+                    </article>
+
+
+
+                    <!-- 02 -->
+
+                    <article class="capability-card">
+
+                        <span
+                            class="capability-number"
+                        >
+                            02
+                        </span>
+
+                        <div
+                            class="capability-icon teal-icon"
+                        >
+                            👆
+                        </div>
+
+                        <h3>
+                            Guided Procedures
+                        </h3>
+
+                        <p>
+                            Follow clear steps in the correct
+                            sequence and understand what to
+                            do at every stage.
+                        </p>
+
+                    </article>
+
+
+
+                    <!-- 03 -->
+
+                    <article class="capability-card">
+
+                        <span
+                            class="capability-number"
+                        >
+                            03
+                        </span>
+
+                        <div
+                            class="capability-icon green-icon"
+                        >
+                            👁
+                        </div>
+
+                        <h3>
+                            Observe Reactions
+                        </h3>
+
+                        <p>
+                            Watch changes such as colour,
+                            bubbles, precipitates, crystals
+                            and temperature.
+                        </p>
+
+                    </article>
+
+
+
+                    <!-- 04 -->
+
+                    <article class="capability-card">
+
+                        <span
+                            class="capability-number"
+                        >
+                            04
+                        </span>
+
+                        <div
+                            class="capability-icon orange-icon"
+                        >
+                            ✓
+                        </div>
+
+                        <h3>
+                            Learn from Results
+                        </h3>
+
+                        <p>
+                            Record observations, understand
+                            the result and answer a short
+                            experiment quiz.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             HOW IT WORKS
+        ================================================== -->
+
+        <section
+            class="section workflow-section"
+            id="how-it-works"
+        >
+
+            <div class="container">
+
+
+                <div class="center-heading">
+
+                    <span class="section-label">
+                        Simple Workflow
+                    </span>
+
+                    <h2>
+                        From Theory to Practical
+                    </h2>
+
+                    <p>
+                        Every experiment follows a simple
+                        learning path designed for students.
+                    </p>
+
+                </div>
+
+
+
+                <div class="workflow">
+
+
+                    <div class="workflow-step">
+
+                        <div class="workflow-circle">
+                            01
+                        </div>
+
+                        <h3>
+                            Learn
+                        </h3>
+
+                        <p>
+                            Understand the basic concept.
+                        </p>
+
+                    </div>
+
+
+                    <div class="workflow-line"></div>
+
+
+                    <div class="workflow-step">
+
+                        <div class="workflow-circle">
+                            02
+                        </div>
+
+                        <h3>
+                            Prepare
+                        </h3>
+
+                        <p>
+                            Check apparatus and chemicals.
+                        </p>
+
+                    </div>
+
+
+                    <div class="workflow-line"></div>
+
+
+                    <div class="workflow-step">
+
+                        <div class="workflow-circle">
+                            03
+                        </div>
+
+                        <h3>
+                            Perform
+                        </h3>
+
+                        <p>
+                            Follow the guided procedure.
+                        </p>
+
+                    </div>
+
+
+                    <div class="workflow-line"></div>
+
+
+                    <div class="workflow-step">
+
+                        <div class="workflow-circle">
+                            04
+                        </div>
+
+                        <h3>
+                            Observe
+                        </h3>
+
+                        <p>
+                            Watch the chemical changes.
+                        </p>
+
+                    </div>
+
+
+                    <div class="workflow-line"></div>
+
+
+                    <div class="workflow-step">
+
+                        <div class="workflow-circle">
+                            05
+                        </div>
+
+                        <h3>
+                            Understand
+                        </h3>
+
+                        <p>
+                            Analyze the result and quiz.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CHEMISTRY REACTION
+        ================================================== -->
+
+        <section class="section reaction-section">
+
+            <div class="container reaction-container">
+
+
+                <div class="reaction-content">
+
+                    <span class="section-label">
+                        Chemistry in Action
+                    </span>
+
+                    <h2>
+                        See What Happens,
+                        Not Just What to Read.
+                    </h2>
+
+                    <p>
+                        Chemistry becomes easier when you can
+                        observe the change. RasayanVerse turns
+                        important laboratory observations into
+                        interactive visual experiences.
+                    </p>
+
+
+                    <div class="reaction-equation">
+
+
+                        <div class="reaction-substance">
+
+                            <strong>
+                                HCl
+                            </strong>
+
+                            <small>
+                                Acid
+                            </small>
+
+                        </div>
+
+
+                        <span class="reaction-plus">
+                            +
+                        </span>
+
+
+                        <div class="reaction-substance">
+
+                            <strong>
+                                NaOH
+                            </strong>
+
+                            <small>
+                                Base
+                            </small>
+
+                        </div>
+
+
+                        <span class="reaction-arrow">
+                            →
+                        </span>
+
+
+                        <div
+                            class="reaction-substance result-substance"
+                        >
+
+                            <strong>
+                                NaCl
+                            </strong>
+
+                            <small>
+                                Salt
+                            </small>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- REACTION VISUAL -->
+
+                <div class="reaction-visual">
+
+                    <div
+                        class="reaction-glow"
+                    ></div>
+
+
+                    <div class="reaction-beaker">
+
+                        <div
+                            class="reaction-liquid"
+                        >
+
+                            <span
+                                class="reaction-bubble rb-one"
+                            ></span>
+
+                            <span
+                                class="reaction-bubble rb-two"
+                            ></span>
+
+                            <span
+                                class="reaction-bubble rb-three"
+                            ></span>
+
+                            <span
+                                class="reaction-bubble rb-four"
+                            ></span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="reaction-label">
+
+                        <span class="reaction-dot"></span>
+
+                        Neutralization reaction
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             VIRTUAL LAB CTA
+        ================================================== -->
+
+        <section class="lab-cta-section">
+
+            <div class="container">
+
+                <div class="lab-cta">
+
+
+                    <!-- DECORATIONS -->
+
+                    <span
+                        class="cta-decoration cta-one"
+                    >
+                        H₂O
+                    </span>
+
+                    <span
+                        class="cta-decoration cta-two"
+                    >
+                        ⚗
+                    </span>
+
+                    <span
+                        class="cta-decoration cta-three"
+                    >
+                        pH
+                    </span>
+
+
+
+                    <!-- CONTENT -->
+
+                    <div class="cta-content">
+
+                        <span
+                            class="section-label light-label"
+                        >
+                            Virtual Laboratory
+                        </span>
+
+
+                        <h2>
+                            Ready to Enter the
+                            Virtual Lab?
+                        </h2>
+
+
+                        <p>
+                            Choose a practical, follow the
+                            guided procedure, interact with
+                            the laboratory and discover
+                            chemistry through practice.
+                        </p>
+
+
+                        <a
+                            href="experiments.html"
+                            class="button cta-button"
+                        >
+
+                            🧪
+
+                            Explore the Laboratory
+
+                            <span>→</span>
+
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- CTA FLASK -->
+
+                    <div class="cta-flask">
+
+                        <div
+                            class="cta-flask-neck"
+                        ></div>
+
+                        <div
+                            class="cta-flask-body"
+                        >
+
+                            <div
+                                class="cta-flask-liquid"
+                            >
+
+                                <span
+                                    class="cta-bubble bubble-six"
+                                ></span>
+
+                                <span
+                                    class="cta-bubble bubble-seven"
+                                ></span>
+
+                                <span
+                                    class="cta-bubble bubble-eight"
+                                ></span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             LEARNING RESOURCES
+        ================================================== -->
+
+        <section class="section resources-section">
+
+            <div class="container">
+
+
+                <div class="center-heading">
+
+                    <span class="section-label">
+                        Explore More
+                    </span>
+
+                    <h2>
+                        Your Chemistry Toolkit
+                    </h2>
+
+                    <p>
+                        Learn concepts and explore elements
+                        before entering the laboratory.
+                    </p>
+
+                </div>
+
+
+
+                <div class="resources-grid">
+
+
+                    <!-- LEARN -->
+
+                    <a
+                        href="learn-chemistry.html"
+                        class="resource-card"
+                    >
+
+                        <div
+                            class="resource-icon resource-blue"
+                        >
+                            📖
+                        </div>
+
+                        <div>
+
+                            <span>
+                                LEARN
+                            </span>
+
+                            <h3>
+                                Learn Chemistry
+                            </h3>
+
+                            <p>
+                                Simple explanations of
+                                important chemistry concepts.
+                            </p>
+
+                        </div>
+
+                        <strong>
+                            →
+                        </strong>
+
+                    </a>
+
+
+
+                    <!-- PERIODIC TABLE -->
+
+                    <a
+                        href="periodic-table.html"
+                        class="resource-card"
+                    >
+
+                        <div
+                            class="resource-icon resource-green"
+                        >
+                            ⚛
+                        </div>
+
+                        <div>
+
+                            <span>
+                                EXPLORE
+                            </span>
+
+                            <h3>
+                                Interactive Periodic Table
+                            </h3>
+
+                            <p>
+                                Explore all 118 elements and
+                                discover their properties.
+                            </p>
+
+                        </div>
+
+                        <strong>
+                            →
+                        </strong>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+
+            <div class="footer-main">
+
+
+                <!-- BRAND -->
+
+                <div class="footer-brand">
+
+                    <a
+                        href="index.html"
+                        class="brand"
+                    >
+
+                        <div class="brand-icon">
+                            ⚗
+                        </div>
+
+                        <div class="brand-text">
+
+                            <div>
+
+                                <span class="brand-hindi">
+                                    रसायन
+                                </span>
+
+                                <span class="brand-english">
+                                    Verse
+                                </span>
+
+                            </div>
+
+                            <small>
+                                VIRTUAL CHEMISTRY LAB
+                            </small>
+
+                        </div>
+
+                    </a>
+
+
+                    <p>
+                        An interactive virtual chemistry
+                        laboratory designed to help students
+                        understand chemistry through guided
+                        practical learning.
+                    </p>
+
+                </div>
+
+
+
+                <!-- PLATFORM -->
+
+                <div class="footer-column">
+
+                    <h3>
+                        Platform
+                    </h3>
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <a href="experiments.html">
+                        Experiments
+                    </a>
+
+                    <a href="learn-chemistry.html">
+                        Learn Chemistry
+                    </a>
+
+                    <a href="periodic-table.html">
+                        Periodic Table
+                    </a>
+
+                </div>
+
+
+
+                <!-- INFORMATION -->
+
+                <div class="footer-column">
+
+                    <h3>
+                        Information
+                    </h3>
+
+                    <a href="about.html">
+                        About Us
+                    </a>
+
+                    <a href="contact.html">
+                        Contact
+                    </a>
+
+                </div>
+
+
+
+                <!-- LAB STATUS -->
+
+                <div
+                    class="footer-column footer-lab-status"
+                >
+
+                    <h3>
+                        Laboratory
+                    </h3>
+
+                    <div class="footer-status">
+
+                        <span></span>
+
+                        Virtual Lab Online
+
+                    </div>
+
+                    <p>
+                        Learn. Experiment. Understand.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FOOTER BOTTOM -->
+
+            <div class="footer-bottom">
+
+                <span>
+                    ©
+                    <span data-current-year>
+                        2026
+                    </span>
+                    RasayanVerse. All rights reserved.
+                </span>
+
+                <span>
+                    Built for Chemistry Learning.
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/experiments.js"></script>
+
+    <script src="js/theme.js"></script>
+
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

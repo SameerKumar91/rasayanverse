@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Chemistry | RasayanVerse</title>
+    <meta name="description" content="Learn Chemistry through simple explanations, formulas, reactions and visual diagrams in RasayanVerse.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/laboratory.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="learn-chemistry.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<header
+        class="navbar"
+        id="navbar"
+    >
+
+        <div class="container navbar-inner">
+
+
+            <!-- BRAND -->
+
+            <a
+                href="index.html"
+                class="brand"
+                aria-label="RasayanVerse Home"
+            >
+
+                <div class="brand-icon">
+                    ⚗
+                </div>
+
+                <div class="brand-text">
+
+                    <div>
+
+                        <span class="brand-hindi">
+                            रसायन
+                        </span>
+
+                        <span class="brand-english">
+                            Verse
+                        </span>
+
+                    </div>
+
+                    <small>
+                        VIRTUAL CHEMISTRY LAB
+                    </small>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- DESKTOP NAVIGATION -->
+
+            <nav
+                class="desktop-nav"
+                aria-label="Main navigation"
+            >
+
+                <a
+                    href="index.html" class="nav-link"
+                >
+                    Home
+                </a>
+
+                <a
+                    href="experiments.html"
+                    class="nav-link"
+                >
+                    Experiments
+                </a>
+
+                <a
+                    href="learn-chemistry.html"
+                    class="nav-link" active
+                >
+                    Learn Chemistry
+                </a>
+
+                <a
+                    href="periodic-table.html"
+                    class="nav-link"
+                >
+                    Periodic Table
+                </a>
+
+                <a
+                    href="about.html"
+                    class="nav-link"
+                >
+                    About
+                </a>
+
+                <a
+                    href="contact.html"
+                    class="nav-link"
+                >
+                    Contact
+                </a>
+
+            </nav>
+
+
+
+            <!-- NAV ACTIONS -->
+
+            <div class="navbar-actions">
+
+
+                <!-- THEME -->
+
+                <button
+                    type="button"
+                    class="theme-toggle"
+                    id="themeToggle"
+                    aria-label="Switch to dark mode"
+                    title="Switch to dark mode"
+                >
+
+                    <span
+                        class="theme-icon"
+                        id="themeIcon"
+                    >
+                        ☾
+                    </span>
+
+                </button>
+
+
+                <!-- DESKTOP CTA -->
+
+                <a
+                    href="experiments.html"
+                    class="nav-cta"
+                >
+
+                    <span>🧪</span>
+
+                    Enter Lab
+
+                </a>
+
+
+                <!-- MOBILE MENU -->
+
+                <button
+                    type="button"
+                    class="mobile-menu-button"
+                    id="mobileMenuButton"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                >
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- MOBILE NAVIGATION -->
+
+        <nav
+            class="mobile-nav"
+            id="mobileNav"
+            aria-label="Mobile navigation"
+        >
+
+            <a
+                href="index.html" class="mobile-nav-link"
+            >
+                Home
+            </a>
+
+            <a
+                href="experiments.html"
+                class="mobile-nav-link"
+            >
+                Experiments
+            </a>
+
+            <a
+                href="learn-chemistry.html"
+                class="mobile-nav-link" active
+            >
+                Learn Chemistry
+            </a>
+
+            <a
+                href="periodic-table.html"
+                class="mobile-nav-link"
+            >
+                Periodic Table
+            </a>
+
+            <a
+                href="about.html"
+                class="mobile-nav-link"
+            >
+                About
+            </a>
+
+            <a
+                href="contact.html"
+                class="mobile-nav-link"
+            >
+                Contact
+            </a>
+
+            <a
+                href="experiments.html"
+                class="mobile-lab-button"
+            >
+                🧪 Enter Virtual Lab
+            </a>
+
+        </nav>
+
+    </header>
+
+<main>
+    <section class="learn-hero">
+        <div class="container learn-hero-grid">
+            <div class="learn-hero-copy">
+                <div class="hero-badge">🧪 CHEMISTRY KNOWLEDGE CENTER</div>
+                <h1>Learn Chemistry <span>Visually</span></h1>
+                <p>Build your chemistry fundamentals with simple explanations, formulas, reactions, laboratory examples and interactive topic cards.</p>
+                <div class="hero-buttons">
+                    <a class="button button-primary" href="#topics">Explore Topics →</a>
+                    <a class="button button-secondary" href="periodic-table.html">Open Periodic Table</a>
+                </div>
+                <div class="hero-stats">
+                    <div><strong>24+</strong><span>Core Topics</span></div>
+                    <div><strong>50+</strong><span>Examples</span></div>
+                    <div><strong>100%</strong><span>Beginner Friendly</span></div>
+                </div>
+            </div>
+
+            <div class="learn-visual-card" aria-label="Chemistry learning illustration">
+                <div class="visual-window">
+                    <div class="visual-window-top"><span></span><span></span><span></span><b>CHEMISTRY NOTES</b></div>
+                    <div class="atom-visual">
+                        <div class="orbit orbit-a"></div>
+                        <div class="orbit orbit-b"></div>
+                        <div class="orbit orbit-c"></div>
+                        <div class="nucleus">C</div>
+                        <i class="electron e1"></i><i class="electron e2"></i><i class="electron e3"></i>
+                    </div>
+                    <div class="formula-strip">H₂O + CO₂ + energy → photosynthesis → glucose + O₂</div>
+                    <div class="mini-lab">
+                        <span class="mini-flask"></span>
+                        <span class="mini-beaker"></span>
+                        <span class="mini-testtube"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="learn-toolbar section" id="topics">
+        <div class="container">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">START WITH THE BASICS</span>
+                    <h2>Explore Chemistry Topics</h2>
+                    <p>Each topic combines theory with a visual, formula, reaction or real-life example.</p>
+                </div>
+                <div class="topic-count" id="topicCount">24 topics</div>
+            </div>
+            <div class="learn-controls">
+                <label class="search-box">
+                    <span>⌕</span>
+                    <input id="topicSearch" type="search" placeholder="Search chemistry topics..." autocomplete="off">
+                </label>
+                <select id="topicFilter" aria-label="Filter chemistry topics">
+                    <option value="all">All Topics</option>
+                    <option value="foundation">Foundation</option>
+                    <option value="atomic">Atomic & Periodic</option>
+                    <option value="bonding">Bonding</option>
+                    <option value="reactions">Reactions</option>
+                    <option value="solutions">Solutions & Acids</option>
+                    <option value="laboratory">Laboratory</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <section class="topics-section">
+        <div class="container">
+            <div class="topics-grid" id="topicsGrid"></div>
+            <div class="no-results" id="noResults" hidden>
+                <div>🧪</div>
+                <h3>No topic found</h3>
+                <p>Try another chemistry keyword.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="chemistry-tip section">
+        <div class="container tip-card">
+            <div class="tip-icon">✦</div>
+            <div>
+                <span class="eyebrow">LEARNING TIP</span>
+                <h2>Understand the pattern, then remember the formula.</h2>
+                <p>Chemistry becomes easier when you connect particles → structure → properties → reaction → observation.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<div class="topic-modal" id="topicModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <article class="topic-modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="modal-close" id="modalClose" type="button" aria-label="Close topic">×</button>
+        <div class="modal-content" id="modalContent"></div>
+    </article>
+</div>
+
+<footer class="footer">
+
+        <div class="container">
+
+
+            <div class="footer-main">
+
+
+                <!-- BRAND -->
+
+                <div class="footer-brand">
+
+                    <a
+                        href="index.html"
+                        class="brand"
+                    >
+
+                        <div class="brand-icon">
+                            ⚗
+                        </div>
+
+                        <div class="brand-text">
+
+                            <div>
+
+                                <span class="brand-hindi">
+                                    रसायन
+                                </span>
+
+                                <span class="brand-english">
+                                    Verse
+                                </span>
+
+                            </div>
+
+                            <small>
+                                VIRTUAL CHEMISTRY LAB
+                            </small>
+
+                        </div>
+
+                    </a>
+
+
+                    <p>
+                        An interactive virtual chemistry
+                        laboratory designed to help students
+                        understand chemistry through guided
+                        practical learning.
+                    </p>
+
+                </div>
+
+
+
+                <!-- PLATFORM -->
+
+                <div class="footer-column">
+
+                    <h3>
+                        Platform
+                    </h3>
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <a href="experiments.html">
+                        Experiments
+                    </a>
+
+                    <a href="learn-chemistry.html">
+                        Learn Chemistry
+                    </a>
+
+                    <a href="periodic-table.html">
+                        Periodic Table
+                    </a>
+
+                </div>
+
+
+
+                <!-- INFORMATION -->
+
+                <div class="footer-column">
+
+                    <h3>
+                        Information
+                    </h3>
+
+                    <a href="about.html">
+                        About Us
+                    </a>
+
+                    <a href="contact.html">
+                        Contact
+                    </a>
+
+                </div>
+
+
+
+                <!-- LAB STATUS -->
+
+                <div
+                    class="footer-column footer-lab-status"
+                >
+
+                    <h3>
+                        Laboratory
+                    </h3>
+
+                    <div class="footer-status">
+
+                        <span></span>
+
+                        Virtual Lab Online
+
+                    </div>
+
+                    <p>
+                        Learn. Experiment. Understand.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FOOTER BOTTOM -->
+
+            <div class="footer-bottom">
+
+                <span>
+                    ©
+                    <span data-current-year>
+                        2026
+                    </span>
+                    RasayanVerse. All rights reserved.
+                </span>
+
+                <span>
+                    Built for Chemistry Learning.
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+<script src="js/theme.js"></script>
+<script src="js/main.js"></script>
+<script src="learn-chemistry.js"></script>
+</body>
+</html>

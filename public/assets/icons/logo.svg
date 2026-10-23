@@ -1,0 +1,97 @@
+<svg width="220" height="64" viewBox="0 0 220 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- Background -->
+    <rect
+        x="1"
+        y="1"
+        width="218"
+        height="62"
+        rx="16"
+        fill="#F8FAFC"
+        stroke="#DCE7EE"
+    />
+
+    <!-- Flask -->
+    <g transform="translate(12 10)">
+
+        <!-- Flask neck -->
+        <path
+            d="M14 2V19L5 39C3.5 42.5 6 46 10 46H30C34 46 36.5 42.5 35 39L26 19V2"
+            fill="#E8F7F5"
+            stroke="#1554A3"
+            stroke-width="2.5"
+            stroke-linejoin="round"
+        />
+
+        <!-- Flask top -->
+        <path
+            d="M11 2H29"
+            stroke="#1554A3"
+            stroke-width="3"
+            stroke-linecap="round"
+        />
+
+        <!-- Liquid -->
+        <path
+            d="M7 35C12 32 27 32 34 35L31 42C30.5 43.5 29 44 27.5 44H12.5C11 44 9.5 43.5 9 42L7 35Z"
+            fill="#2DD4BF"
+        />
+
+        <!-- Bubble -->
+        <circle
+            cx="17"
+            cy="31"
+            r="2"
+            fill="#0F8B8D"
+        />
+
+        <circle
+            cx="25"
+            cy="27"
+            r="1.7"
+            fill="#0F8B8D"
+        />
+
+    </g>
+
+
+    <!-- Hindi Name -->
+    <text
+        x="61"
+        y="29"
+        font-family="Noto Sans Devanagari, Mangal, sans-serif"
+        font-size="21"
+        font-weight="800"
+        fill="#1554A3"
+    >
+        रसायन
+    </text>
+
+
+    <!-- English Name -->
+    <text
+        x="126"
+        y="29"
+        font-family="Inter, Arial, sans-serif"
+        font-size="21"
+        font-weight="800"
+        fill="#0F8B8D"
+    >
+        Verse
+    </text>
+
+
+    <!-- Tagline -->
+    <text
+        x="63"
+        y="47"
+        font-family="Inter, Arial, sans-serif"
+        font-size="7.5"
+        font-weight="600"
+        letter-spacing="1.2"
+        fill="#64748B"
+    >
+        VIRTUAL CHEMISTRY LAB
+    </text>
+
+</svg>

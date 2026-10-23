@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="RasayanVerse Practical 14 - Heat of Neutralization"
+    >
+
+    <title>Practical 14 | Heat of Neutralization | RasayanVerse</title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../../css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../../css/laboratory.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../../css/responsive.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="practical.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         LOADER
+    ====================================================== -->
+
+    <div
+        class="page-loader"
+        id="pageLoader"
+    >
+
+        <div class="loader-flask">
+            <div class="loader-liquid"></div>
+        </div>
+
+        <p>
+            Preparing Practical 14...
+        </p>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header
+        class="navbar"
+        id="navbar"
+    >
+
+        <div class="container navbar-inner">
+
+
+            <!-- BRAND -->
+
+            <a
+                href="../../index.html"
+                class="brand"
+                aria-label="RasayanVerse Home"
+            >
+
+                <div class="brand-icon">
+                    ⚗
+                </div>
+
+                <div class="brand-text">
+
+                    <div>
+
+                        <span class="brand-hindi">
+                            रसायन
+                        </span>
+
+                        <span class="brand-english">
+                            Verse
+                        </span>
+
+                    </div>
+
+                    <small>
+                        VIRTUAL CHEMISTRY LAB
+                    </small>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- DESKTOP NAVIGATION -->
+
+            <nav
+                class="desktop-nav"
+                aria-label="Main navigation"
+            >
+
+                <a
+                    href="../../index.html" class="nav-link"
+                >
+                    Home
+                </a>
+
+                <a
+                    href="../../experiments.html"
+                    class="nav-link" active
+                >
+                    Experiments
+                </a>
+
+                <a
+                    href="../../learn-chemistry.html"
+                    class="nav-link"
+                >
+                    Learn Chemistry
+                </a>
+
+                <a
+                    href="../../periodic-table.html"
+                    class="nav-link"
+                >
+                    Periodic Table
+                </a>
+
+                <a
+                    href="../../about.html"
+                    class="nav-link"
+                >
+                    About
+                </a>
+
+                <a
+                    href="../../contact.html"
+                    class="nav-link"
+                >
+                    Contact
+                </a>
+
+            </nav>
+
+
+
+            <!-- NAV ACTIONS -->
+
+            <div class="navbar-actions">
+
+
+                <!-- THEME -->
+
+                <button
+                    type="button"
+                    class="theme-toggle"
+                    id="themeToggle"
+                    aria-label="Switch to dark mode"
+                    title="Switch to dark mode"
+                >
+
+                    <span
+                        class="theme-icon"
+                        id="themeIcon"
+                    >
+                        ☾
+                    </span>
+
+                </button>
+
+
+                <!-- DESKTOP CTA -->
+
+                <a
+                    href="../../experiments.html"
+                    class="nav-cta"
+                >
+
+                    <span>🧪</span>
+
+                    Enter Lab
+
+                </a>
+
+
+                <!-- MOBILE MENU -->
+
+                <button
+                    type="button"
+                    class="mobile-menu-button"
+                    id="mobileMenuButton"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                >
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- MOBILE NAVIGATION -->
+
+        <nav
+            class="mobile-nav"
+            id="mobileNav"
+            aria-label="Mobile navigation"
+        >
+
+            <a
+                href="../../index.html" class="mobile-nav-link"
+            >
+                Home
+            </a>
+
+            <a
+                href="../../experiments.html"
+                class="mobile-nav-link" active
+            >
+                Experiments
+            </a>
+
+            <a
+                href="../../learn-chemistry.html"
+                class="mobile-nav-link"
+            >
+                Learn Chemistry
+            </a>
+
+            <a
+                href="../../periodic-table.html"
+                class="mobile-nav-link"
+            >
+                Periodic Table
+            </a>
+
+            <a
+                href="../../about.html"
+                class="mobile-nav-link"
+            >
+                About
+            </a>
+
+            <a
+                href="../../contact.html"
+                class="mobile-nav-link"
+            >
+                Contact
+            </a>
+
+            <a
+                href="../../experiments.html"
+                class="mobile-lab-button"
+            >
+                🧪 Enter Virtual Lab
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main>
+<section class="practical-hero"><div class="container">
+<div class="breadcrumb"><a href="../../index.html">Home</a><span>›</span><a href="../../experiments.html">Experiments</a><span>›</span><span>Practical 14</span></div>
+<div class="practical-hero-grid"><div>
+<span class="practical-label">PRACTICAL 14</span>
+<h1>Heat <span>of Neutralization</span></h1>
+<p>Measure the temperature change when an acid reacts with a base and observe the heat released by neutralization.</p>
+<div class="practical-meta"><span>⚗ Thermochemistry</span><span>⏱ 8–10 min</span><span>🎓 Guided Practical</span></div>
+</div>
+<div class="hero-reaction-card"><div class="reaction-card-title">Reaction / Principle</div><div class="reaction-card-equation"><strong>H⁺ + OH⁻</strong> <span>→</span> <strong>H₂O + Heat</strong></div><small>Neutralization of a strong acid and strong base is exothermic.</small></div>
+</div></div></section>
+
+<div class="practical-sticky-nav"><div class="container practical-nav-inner">
+<a href="#concept">Concept</a><a href="#aim">Aim</a><a href="#apparatus">Apparatus</a><a href="#chemicals">Chemicals</a><a href="#safety">Safety</a><a href="#procedure">Procedure</a><a href="#virtual-lab" class="nav-lab-link">🧪 Virtual Lab</a><a href="#result">Result</a><a href="#quiz">Quiz</a>
+</div></div>
+
+<section class="practical-section" id="concept"><div class="container"><div class="section-heading-simple"><span>01 • BASIC CONCEPT</span><h2>What is Heat of Neutralization?</h2></div>
+<div class="concept-grid"><div class="concept-main"><p>When an acid and a base react, hydrogen ions combine with hydroxide ions to form water.</p><p>For a strong acid and strong base, this process releases heat and the temperature of the mixture rises.</p><p>The temperature change can be used to estimate the heat released under suitable assumptions.</p></div><div class="concept-highlight"><div class="concept-formula">q = m c ΔT</div><p>This principle is the key idea behind the practical.</p></div></div></div></section>
+
+<section class="practical-section soft-section" id="aim"><div class="container"><div class="info-card aim-card"><div class="info-icon">🎯</div><div><span class="info-label">AIM</span><h2>To observe the temperature rise during acid–base neutralization and determine the heat released.</h2></div></div></div></section>
+
+<section class="practical-section" id="apparatus"><div class="container"><div class="section-heading-simple"><span>03 • APPARATUS</span><h2>Laboratory Equipment</h2></div><div class="items-grid">
+<div class="item-card">
+  <div class="item-visual">⚗</div>
+  <h3>Polystyrene Cup</h3>
+  <p>Acts as a simple calorimeter.</p>
+</div>
+<div class="item-card">
+  <div class="item-visual">🧪</div>
+  <h3>Thermometer</h3>
+  <p>Measures temperature.</p>
+</div>
+<div class="item-card">
+  <div class="item-visual">📏</div>
+  <h3>Measuring Cylinder</h3>
+  <p>Measures reactant volumes.</p>
+</div>
+<div class="item-card">
+  <div class="item-visual">🔬</div>
+  <h3>Stirrer</h3>
+  <p>Mixes the reactants evenly.</p>
+</div></div></div></section>
+
+<section class="practical-section soft-section" id="chemicals"><div class="container"><div class="section-heading-simple"><span>04 • CHEMICALS</span><h2>Chemicals Required</h2></div><div class="chemical-list">
+<div class="chemical-row">
+  <div class="chemical-color blue"></div>
+  <div><strong>Hydrochloric Acid</strong><span>Acid sample</span></div>
+</div>
+<div class="chemical-row">
+  <div class="chemical-color teal"></div>
+  <div><strong>Sodium Hydroxide</strong><span>Base sample</span></div>
+</div>
+<div class="chemical-row">
+  <div class="chemical-color pink"></div>
+  <div><strong>Water</strong><span>For comparison/calibration if required</span></div>
+</div></div></div></section>
+
+<section class="practical-section" id="safety"><div class="container"><div class="safety-box"><div class="safety-title"><span>⚠</span><div><span>05 • SAFETY</span><h2>Work Carefully</h2></div></div><div class="safety-grid"><div>Wear eye protection.</div><div>Handle acid and base carefully.</div><div>Do not touch the reacting solution unnecessarily.</div><div>Record temperature promptly.</div></div></div></div></section>
+
+<section class="practical-section soft-section" id="procedure"><div class="container"><div class="section-heading-simple"><span>06 • PROCEDURE</span><h2>Follow the Experiment</h2><p>Read each step before performing the corresponding action in the virtual laboratory.</p></div><div class="procedure-list">
+<div class="procedure-step">
+  <div class="step-number">01</div>
+  <div><h3>Measure reactants</h3><p>Take equal measured volumes of acid and base.</p></div>
+</div>
+<div class="procedure-step">
+  <div class="step-number">02</div>
+  <div><h3>Record initial temperature</h3><p>Note the starting temperatures.</p></div>
+</div>
+<div class="procedure-step">
+  <div class="step-number">03</div>
+  <div><h3>Mix</h3><p>Combine the solutions and stir.</p></div>
+</div>
+<div class="procedure-step">
+  <div class="step-number">04</div>
+  <div><h3>Observe maximum temperature</h3><p>Monitor the thermometer.</p></div>
+</div>
+<div class="procedure-step">
+  <div class="step-number">05</div>
+  <div><h3>Calculate ΔT</h3><p>Compare final and initial temperature.</p></div>
+</div></div></div></section>
+
+<section class="virtual-lab-section" id="virtual-lab"><div class="container">
+<div class="virtual-lab-header"><div><span>07 • VIRTUAL LABORATORY</span><h2>Perform Heat of Neutralization</h2><p>Follow the instructions and perform each laboratory step in order.</p></div><button type="button" class="reset-button" id="resetExperiment">↻ Reset Experiment</button></div>
+<div class="virtual-lab"><div class="lab-control-bar"><div><span class="lab-live-dot"></span>Virtual Workbench</div><div id="labStatus">Ready</div></div>
+<div class="lab-workspace">
+<aside class="instruction-panel"><span class="instruction-label">YOUR TASK</span><h3 id="instructionTitle">Measure acid</h3><p id="instructionText">Click Add Acid to place the acid in the calorimeter.</p><div class="instruction-progress"><div id="instructionProgress"></div></div><span class="instruction-count" id="instructionCount">Step 1 of 5</span><div class="lab-tip">💡 <span>Perform each step in order. The laboratory will unlock the next action after each successful step.</span></div></aside>
+
+<div class="titration-scene concept-lab-scene scene-heat">
+  <div class="scene-wall"><div class="scene-window"></div><div class="scene-shelf"><span></span><span></span><span></span></div></div>
+  <div class="scene-bench"></div>
+  <div class="scene-visual"><div class="calorimeter"><i></i></div><div class="thermometer"><b></b></div><div class="heat-wave">≈</div><div class="scene-label">Neutralization calorimeter</div></div>
+  
+  <div class="lab-actions">
+    <button type="button" id="stepAction1" class="lab-action-button" data-step="1" >Measure acid</button><button type="button" id="stepAction2" class="lab-action-button" data-step="2" disabled>Measure base</button><button type="button" id="stepAction3" class="lab-action-button" data-step="3" disabled>Mix reactants</button><button type="button" id="stepAction4" class="lab-action-button" data-step="4" disabled>Measure temperature</button><button type="button" id="stepAction5" class="lab-action-button" data-step="5" disabled>Record ΔT</button>
+  </div>
+</div>
+<aside class="lab-observation"><span class="instruction-label">LIVE OBSERVATION</span>
+<div class="reading-box"><span>Current Step</span><strong id="readingValue">1 / 5</strong></div>
+<div class="reading-box"><span>Selected / Reading</span><strong id="colourValue">—</strong></div>
+<div class="reading-box"><span>Result Status</span><strong id="endpointValue">Not completed</strong></div>
+<div class="endpoint-indicator" id="endpointIndicator"><span></span> Complete the steps in order.</div>
+</aside>
+</div></div></div></section>
+
+<section class="practical-section"><div class="container"><div class="what-happens"><div><span>WHAT HAPPENS?</span><h2>Why does the temperature increase?</h2></div><p>The neutralization reaction releases energy. Some of this energy appears as thermal energy, raising the temperature of the mixture.</p></div></div></section>
+
+<section class="practical-section soft-section" id="observation"><div class="container"><div class="section-heading-simple"><span>08 • OBSERVATION</span><h2>Record the Observation</h2></div>
+<div class="observation-table-wrapper"><table class="observation-table"><thead><tr><th>Initial Temp.</th><th>Final Temp.</th><th>ΔT</th><th>Observation</th><th>Result</th></tr></thead><tbody><tr><td id="obs0">—</td><td id="obs1">—</td><td id="obs2">—</td><td id="obs3">—</td><td id="obs4">—</td></tr></tbody></table></div></div></section>
+
+<section class="practical-section" id="result"><div class="container"><div class="result-card"><div class="result-icon">✓</div><div><span>RESULT</span><h2 id="resultHeading">Complete the virtual practical to obtain the result.</h2><p id="resultText">Perform all laboratory steps in order. Your final observation will appear here.</p></div></div></div></section>
+
+<section class="quiz-section" id="quiz"><div class="container"><div class="section-heading-simple"><span>09 • QUICK QUIZ</span><h2>Check Your Understanding</h2></div><div class="quiz-card">
+
+<div class="quiz-question" data-question="1">
+  <span>Question 1 of 3</span>
+  <h3>Neutralization of strong acid/base is generally...</h3>
+  <label><input type="radio" name="q1" value="a"> Exothermic</label>
+  <label><input type="radio" name="q1" value="b"> Endothermic</label>
+  <label><input type="radio" name="q1" value="c"> No-energy process</label>
+</div>
+
+<div class="quiz-question" data-question="2">
+  <span>Question 2 of 3</span>
+  <h3>What does ΔT mean?</h3>
+  <label><input type="radio" name="q2" value="a"> Temperature change</label>
+  <label><input type="radio" name="q2" value="b"> Mass change</label>
+  <label><input type="radio" name="q2" value="c"> Volume only</label>
+</div>
+
+<div class="quiz-question" data-question="3">
+  <span>Question 3 of 3</span>
+  <h3>Which equation estimates heat?</h3>
+  <label><input type="radio" name="q3" value="a"> q = mcΔT</label>
+  <label><input type="radio" name="q3" value="b"> pV = nRT only</label>
+  <label><input type="radio" name="q3" value="c"> M = m/V only</label>
+</div>
+<button type="button" class="quiz-submit" id="quizSubmit">Check Answers</button><div class="quiz-result" id="quizResult"></div></div></div></section>
+
+<section class="practical-navigation"><div class="container">
+<a href="../../experiments.html" class="practical-nav-card"><span>←</span><div><small>BACK</small><strong>All Experiments</strong></div></a>
+<a href="../practical-15/index.html" class="practical-nav-card next"><div><small>NEXT PRACTICAL</small><strong>Buffer Solution &amp; pH</strong></div><span>→</span></a>
+</div></section>
+</main>
+
+
+
+    <!-- =================================================
+         FOOTER
+    ================================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+
+            <div class="footer-main">
+
+
+                <!-- BRAND -->
+
+                <div class="footer-brand">
+
+                    <a
+                        href="../../index.html"
+                        class="brand"
+                    >
+
+                        <div class="brand-icon">
+                            ⚗
+                        </div>
+
+                        <div class="brand-text">
+
+                            <div>
+
+                                <span class="brand-hindi">
+                                    रसायन
+                                </span>
+
+                                <span class="brand-english">
+                                    Verse
+                                </span>
+
+                            </div>
+
+                            <small>
+                                VIRTUAL CHEMISTRY LAB
+                            </small>
+
+                        </div>
+
+                    </a>
+
+
+                    <p>
+                        An interactive virtual chemistry
+                        laboratory designed to help students
+                        understand chemistry through guided
+                        practical learning.
+                    </p>
+
+                </div>
+
+
+
+                <!-- PLATFORM -->
+
+                <div class="footer-column">
+
+                    <h3>
+                        Platform
+                    </h3>
+
+                    <a href="../../index.html">
+                        Home
+                    </a>
+
+                    <a href="../../experiments.html">
+                        Experiments
+                    </a>
+
+                    <a href="../../learn-chemistry.html">
+                        Learn Chemistry
+                    </a>
+
+                    <a href="../../periodic-table.html">
+                        Periodic Table
+                    </a>
+
+                </div>
+
+
+
+                <!-- INFORMATION -->
+
+                <div class="footer-column">
+
+                    <h3>
+                        Information
+                    </h3>
+
+                    <a href="../../about.html">
+                        About Us
+                    </a>
+
+                    <a href="../../contact.html">
+                        Contact
+                    </a>
+
+                </div>
+
+
+
+                <!-- LAB STATUS -->
+
+                <div
+                    class="footer-column footer-lab-status"
+                >
+
+                    <h3>
+                        Laboratory
+                    </h3>
+
+                    <div class="footer-status">
+
+                        <span></span>
+
+                        Virtual Lab Online
+
+                    </div>
+
+                    <p>
+                        Learn. Experiment. Understand.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FOOTER BOTTOM -->
+
+            <div class="footer-bottom">
+
+                <span>
+                    ©
+                    <span data-current-year>
+                        2026
+                    </span>
+                    RasayanVerse. All rights reserved.
+                </span>
+
+                <span>
+                    Built for Chemistry Learning.
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =================================================
+         JAVASCRIPT
+    ================================================== -->
+
+    <script
+        src="../../js/theme.js"
+    ></script>
+
+    <script
+        src="../../js/main.js"
+    ></script>
+
+    <script
+        src="practical.js"
+    ></script>
+
+
+</body>
+
+</html>

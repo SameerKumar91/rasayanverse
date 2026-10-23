@@ -1,0 +1,2023 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="RasayanVerse Practical 02 - Determination of pH"
+    >
+
+    <title>Practical 02 | Determination of pH | RasayanVerse</title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../../css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../../css/laboratory.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../../css/responsive.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="practical.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         LOADER
+    ====================================================== -->
+
+    <div
+        class="page-loader"
+        id="pageLoader"
+    >
+
+        <div class="loader-flask">
+            <div class="loader-liquid"></div>
+        </div>
+
+        <p>
+            Preparing Practical 02...
+        </p>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header
+        class="navbar"
+        id="navbar"
+    >
+
+        <div class="container navbar-inner">
+
+
+            <!-- BRAND -->
+
+            <a
+                href="../../index.html"
+                class="brand"
+                aria-label="RasayanVerse Home"
+            >
+
+                <div class="brand-icon">
+                    ⚗
+                </div>
+
+                <div class="brand-text">
+
+                    <div>
+
+                        <span class="brand-hindi">
+                            रसायन
+                        </span>
+
+                        <span class="brand-english">
+                            Verse
+                        </span>
+
+                    </div>
+
+                    <small>
+                        VIRTUAL CHEMISTRY LAB
+                    </small>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- DESKTOP NAVIGATION -->
+
+            <nav
+                class="desktop-nav"
+                aria-label="Main navigation"
+            >
+
+                <a
+                    href="../../index.html" class="nav-link"
+                >
+                    Home
+                </a>
+
+                <a
+                    href="../../experiments.html"
+                    class="nav-link" active
+                >
+                    Experiments
+                </a>
+
+                <a
+                    href="../../learn-chemistry.html"
+                    class="nav-link"
+                >
+                    Learn Chemistry
+                </a>
+
+                <a
+                    href="../../periodic-table.html"
+                    class="nav-link"
+                >
+                    Periodic Table
+                </a>
+
+                <a
+                    href="../../about.html"
+                    class="nav-link"
+                >
+                    About
+                </a>
+
+                <a
+                    href="../../contact.html"
+                    class="nav-link"
+                >
+                    Contact
+                </a>
+
+            </nav>
+
+
+
+            <!-- NAV ACTIONS -->
+
+            <div class="navbar-actions">
+
+
+                <!-- THEME -->
+
+                <button
+                    type="button"
+                    class="theme-toggle"
+                    id="themeToggle"
+                    aria-label="Switch to dark mode"
+                    title="Switch to dark mode"
+                >
+
+                    <span
+                        class="theme-icon"
+                        id="themeIcon"
+                    >
+                        ☾
+                    </span>
+
+                </button>
+
+
+                <!-- DESKTOP CTA -->
+
+                <a
+                    href="../../experiments.html"
+                    class="nav-cta"
+                >
+
+                    <span>🧪</span>
+
+                    Enter Lab
+
+                </a>
+
+
+                <!-- MOBILE MENU -->
+
+                <button
+                    type="button"
+                    class="mobile-menu-button"
+                    id="mobileMenuButton"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                >
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- MOBILE NAVIGATION -->
+
+        <nav
+            class="mobile-nav"
+            id="mobileNav"
+            aria-label="Mobile navigation"
+        >
+
+            <a
+                href="../../index.html" class="mobile-nav-link"
+            >
+                Home
+            </a>
+
+            <a
+                href="../../experiments.html"
+                class="mobile-nav-link" active
+            >
+                Experiments
+            </a>
+
+            <a
+                href="../../learn-chemistry.html"
+                class="mobile-nav-link"
+            >
+                Learn Chemistry
+            </a>
+
+            <a
+                href="../../periodic-table.html"
+                class="mobile-nav-link"
+            >
+                Periodic Table
+            </a>
+
+            <a
+                href="../../about.html"
+                class="mobile-nav-link"
+            >
+                About
+            </a>
+
+            <a
+                href="../../contact.html"
+                class="mobile-nav-link"
+            >
+                Contact
+            </a>
+
+            <a
+                href="../../experiments.html"
+                class="mobile-lab-button"
+            >
+                🧪 Enter Virtual Lab
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             PRACTICAL HEADER
+        ================================================== -->
+
+        <section class="practical-hero">
+
+            <div class="container">
+
+                <div class="breadcrumb">
+
+                    <a href="../../index.html">
+                        Home
+                    </a>
+
+                    <span>›</span>
+
+                    <a href="../../experiments.html">
+                        Experiments
+                    </a>
+
+                    <span>›</span>
+
+                    <span>
+                        Practical 02
+                    </span>
+
+                </div>
+
+
+                <div class="practical-hero-grid">
+
+                    <div>
+
+                        <span class="practical-label">
+                            PRACTICAL 02
+                        </span>
+
+                        <h1>
+                            Determination of
+                            <span>
+                                pH
+                            </span>
+                        </h1>
+
+                        <p>
+                            Determine the pH of different solutions
+                            using a pH meter and classify them as
+                            acidic, neutral or basic.
+                        </p>
+
+
+                        <div class="practical-meta">
+
+                            <span>
+                                ⚗ Acid • Base
+                            </span>
+
+                            <span>
+                                ⏱ 10–15 min
+                            </span>
+
+                            <span>
+                                🎓 Guided Practical
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="hero-reaction-card">
+
+                        <div class="reaction-card-title">
+                            Key Concept
+                        </div>
+
+                        <div class="reaction-card-equation">
+
+                            <strong>
+                                pH
+                            </strong>
+
+                            <span>=</span>
+
+                            <strong>
+                                −log[H⁺]
+                            </strong>
+
+                        </div>
+
+                        <small>
+                            pH &lt; 7 → Acidic &nbsp; • &nbsp;
+                            pH = 7 → Neutral &nbsp; • &nbsp;
+                            pH &gt; 7 → Basic
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PRACTICAL NAVIGATION
+        ================================================== -->
+
+        <div class="practical-sticky-nav">
+
+            <div class="container practical-nav-inner">
+
+                <a href="#concept">
+                    Concept
+                </a>
+
+                <a href="#aim">
+                    Aim
+                </a>
+
+                <a href="#apparatus">
+                    Apparatus
+                </a>
+
+                <a href="#chemicals">
+                    Chemicals
+                </a>
+
+                <a href="#safety">
+                    Safety
+                </a>
+
+                <a href="#procedure">
+                    Procedure
+                </a>
+
+                <a
+                    href="#virtual-lab"
+                    class="nav-lab-link"
+                >
+                    🧪 Virtual Lab
+                </a>
+
+                <a href="#result">
+                    Result
+                </a>
+
+                <a href="#quiz">
+                    Quiz
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             CONCEPT
+        ================================================== -->
+
+        <section
+            class="practical-section"
+            id="concept"
+        >
+
+            <div class="container">
+
+                <div class="section-heading-simple">
+
+                    <span>
+                        01 • BASIC CONCEPT
+                    </span>
+
+                    <h2>
+                        What is pH?
+                    </h2>
+
+                </div>
+
+
+                <div class="concept-grid">
+
+                    <div class="concept-main">
+
+                        <p>
+                            pH is a measure of how acidic or basic
+                            a solution is. It is related to the
+                            concentration of hydrogen ions present
+                            in the solution.
+                        </p>
+
+                        <p>
+                            The pH scale generally ranges from
+                            <strong>0 to 14</strong>. A value below
+                            7 indicates an acidic solution, 7 is
+                            neutral, and a value above 7 indicates
+                            a basic solution.
+                        </p>
+
+                        <p>
+                            In this experiment, a digital pH meter
+                            is used to measure the pH of hydrochloric
+                            acid, distilled water and sodium hydroxide.
+                        </p>
+
+                    </div>
+
+
+                    <div class="concept-highlight">
+
+                        <div class="concept-formula">
+                            pH = −log[H⁺]
+                        </div>
+
+                        <p>
+                            The pH value helps us identify the
+                            <strong>
+                                acidic, neutral or basic
+                            </strong>
+                            nature of a solution.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             AIM
+        ================================================== -->
+
+        <section
+            class="practical-section soft-section"
+            id="aim"
+        >
+
+            <div class="container">
+
+                <div class="info-card aim-card">
+
+                    <div class="info-icon">
+                        🎯
+                    </div>
+
+                    <div>
+
+                        <span class="info-label">
+                            AIM
+                        </span>
+
+                        <h2>
+                            To determine the pH of given solutions
+                            using a pH meter and classify them as
+                            acidic, neutral or basic.
+                        </h2>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             APPARATUS
+        ================================================== -->
+
+        <section
+            class="practical-section"
+            id="apparatus"
+        >
+
+            <div class="container">
+
+                <div class="section-heading-simple">
+
+                    <span>
+                        03 • APPARATUS
+                    </span>
+
+                    <h2>
+                        Laboratory Equipment
+                    </h2>
+
+                </div>
+
+
+                <div class="items-grid">
+
+                    <div class="item-card">
+
+                        <div class="item-visual">
+                            🧪
+                        </div>
+
+                        <h3>
+                            Beaker
+                        </h3>
+
+                        <p>
+                            Used to hold the solution being tested.
+                        </p>
+
+                    </div>
+
+
+                    <div class="item-card">
+
+                        <div class="item-visual">
+                            📟
+                        </div>
+
+                        <h3>
+                            pH Meter
+                        </h3>
+
+                        <p>
+                            Digital instrument used to measure pH.
+                        </p>
+
+                    </div>
+
+
+                    <div class="item-card">
+
+                        <div class="item-visual">
+                            🔌
+                        </div>
+
+                        <h3>
+                            pH Electrode
+                        </h3>
+
+                        <p>
+                            Sensor placed directly into the sample.
+                        </p>
+
+                    </div>
+
+
+                    <div class="item-card">
+
+                        <div class="item-visual">
+                            💧
+                        </div>
+
+                        <h3>
+                            Wash Bottle
+                        </h3>
+
+                        <p>
+                            Used to rinse the electrode between samples.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CHEMICALS
+        ================================================== -->
+
+        <section
+            class="practical-section soft-section"
+            id="chemicals"
+        >
+
+            <div class="container">
+
+                <div class="section-heading-simple">
+
+                    <span>
+                        04 • CHEMICALS
+                    </span>
+
+                    <h2>
+                        Chemicals Required
+                    </h2>
+
+                </div>
+
+
+                <div class="chemical-list">
+
+                    <div class="chemical-row">
+
+                        <div class="chemical-color blue"></div>
+
+                        <div>
+
+                            <strong>
+                                Hydrochloric Acid (HCl)
+                            </strong>
+
+                            <span>
+                                Acidic sample — pH 2
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="chemical-row">
+
+                        <div class="chemical-color teal"></div>
+
+                        <div>
+
+                            <strong>
+                                Distilled Water (H₂O)
+                            </strong>
+
+                            <span>
+                                Neutral sample — pH 7
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="chemical-row">
+
+                        <div class="chemical-color pink"></div>
+
+                        <div>
+
+                            <strong>
+                                Sodium Hydroxide (NaOH)
+                            </strong>
+
+                            <span>
+                                Basic sample — pH 12
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SAFETY
+        ================================================== -->
+
+        <section
+            class="practical-section"
+            id="safety"
+        >
+
+            <div class="container">
+
+                <div class="safety-box">
+
+                    <div class="safety-title">
+
+                        <span>
+                            ⚠
+                        </span>
+
+                        <div>
+
+                            <span>
+                                05 • SAFETY
+                            </span>
+
+                            <h2>
+                                Work Carefully
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="safety-grid">
+
+                        <div>
+                            Handle acids and bases carefully.
+                        </div>
+
+                        <div>
+                            Never taste or directly smell chemicals.
+                        </div>
+
+                        <div>
+                            Rinse the pH electrode before testing another sample.
+                        </div>
+
+                        <div>
+                            Keep the pH meter and electrical connections dry.
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PROCEDURE
+        ================================================== -->
+
+        <section
+            class="practical-section soft-section"
+            id="procedure"
+        >
+
+            <div class="container">
+
+                <div class="section-heading-simple">
+
+                    <span>
+                        06 • PROCEDURE
+                    </span>
+
+                    <h2>
+                        Follow the Experiment
+                    </h2>
+
+                    <p>
+                        Read each step before performing the
+                        corresponding action in the virtual laboratory.
+                    </p>
+
+                </div>
+
+
+                <div class="procedure-list">
+
+                    <div class="procedure-step">
+
+                        <div class="step-number">
+                            01
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Prepare the pH meter
+                            </h3>
+
+                            <p>
+                                Make sure the pH meter is ready and
+                                the electrode is clean.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="procedure-step">
+
+                        <div class="step-number">
+                            02
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Select the sample
+                            </h3>
+
+                            <p>
+                                Choose HCl, distilled water or NaOH
+                                from the virtual laboratory.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="procedure-step">
+
+                        <div class="step-number">
+                            03
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Place the electrode
+                            </h3>
+
+                            <p>
+                                Lower the pH electrode into the
+                                selected solution without touching
+                                the bottom of the beaker.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="procedure-step">
+
+                        <div class="step-number">
+                            04
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Start measurement
+                            </h3>
+
+                            <p>
+                                Start the measurement and wait while
+                                the pH reading stabilizes.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="procedure-step">
+
+                        <div class="step-number">
+                            05
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Record the pH
+                            </h3>
+
+                            <p>
+                                Record the stable pH value and identify
+                                the nature of the solution.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             VIRTUAL LAB
+        ================================================== -->
+
+        <section
+            class="virtual-lab-section"
+            id="virtual-lab"
+        >
+
+            <div class="container">
+
+                <div class="virtual-lab-header">
+
+                    <div>
+
+                        <span>
+                            07 • VIRTUAL LABORATORY
+                        </span>
+
+                        <h2>
+                            Determine the pH
+                        </h2>
+
+                        <p>
+                            Select a solution and interact with the
+                            virtual pH meter to obtain its reading.
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="reset-button"
+                        id="resetExperiment"
+                    >
+                        ↻ Reset Experiment
+                    </button>
+
+                </div>
+
+
+                <div class="virtual-lab">
+
+                    <div class="lab-control-bar">
+
+                        <div>
+
+                            <span class="lab-live-dot"></span>
+
+                            Virtual Workbench
+
+                        </div>
+
+                        <div id="labStatus">
+                            Ready
+                        </div>
+
+                    </div>
+
+
+                    <div class="lab-workspace">
+
+                        <!-- INSTRUCTIONS -->
+
+                        <aside class="instruction-panel">
+
+                            <span class="instruction-label">
+                                YOUR TASK
+                            </span>
+
+                            <h3 id="instructionTitle">
+                                Select a sample
+                            </h3>
+
+                            <p id="instructionText">
+                                Choose one of the available solutions
+                                to begin the pH measurement.
+                            </p>
+
+
+                            <div class="instruction-progress">
+
+                                <div
+                                    id="instructionProgress"
+                                ></div>
+
+                            </div>
+
+
+                            <span
+                                class="instruction-count"
+                                id="instructionCount"
+                            >
+                                Step 1 of 4
+                            </span>
+
+
+                            <div class="lab-tip">
+
+                                💡
+
+                                <span>
+                                    Keep the electrode tip inside
+                                    the solution while taking the
+                                    measurement.
+                                </span>
+
+                            </div>
+
+                        </aside>
+
+
+                        <!-- PH LAB SCENE -->
+
+                        <div class="titration-scene ph-scene">
+
+                            <div class="scene-wall">
+
+                                <div class="scene-window"></div>
+
+                                <div class="scene-shelf">
+
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- PH METER -->
+
+                            <div class="ph-meter">
+
+                                <div class="ph-meter-screen">
+
+                                    <small>
+                                        pH
+                                    </small>
+
+                                    <strong id="meterValue">
+                                        --
+                                    </strong>
+
+                                </div>
+
+                                <div class="ph-meter-buttons">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <div class="ph-meter-label">
+                                    DIGITAL pH METER
+                                </div>
+
+                            </div>
+
+
+                            <!-- ELECTRODE / CABLE -->
+
+                            <div class="ph-electrode-system">
+
+                                <div class="ph-cable"></div>
+
+                                <div class="ph-electrode">
+
+                                    <div class="electrode-head"></div>
+
+                                    <div class="electrode-shaft"></div>
+
+                                    <div class="electrode-tip"></div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- BEAKER -->
+
+                            <div class="ph-beaker">
+
+                                <div class="ph-beaker-rim"></div>
+
+                                <div
+                                    class="ph-solution"
+                                    id="phSolution"
+                                ></div>
+
+                                <span class="ph-mark mark-1">
+                                    100
+                                </span>
+
+                                <span class="ph-mark mark-2">
+                                    75
+                                </span>
+
+                                <span class="ph-mark mark-3">
+                                    50
+                                </span>
+
+                            </div>
+
+
+                            <!-- SAMPLE BOTTLES -->
+
+                            <div class="ph-sample-bottle acid-sample">
+
+                                <div class="sample-cap"></div>
+
+                                <div class="sample-body">
+
+                                    <strong>
+                                        HCl
+                                    </strong>
+
+                                    <small>
+                                        Acid
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="ph-sample-bottle water-sample">
+
+                                <div class="sample-cap"></div>
+
+                                <div class="sample-body">
+
+                                    <strong>
+                                        H₂O
+                                    </strong>
+
+                                    <small>
+                                        Neutral
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- ACTION BUTTONS -->
+
+                            <div class="lab-actions">
+
+                                <button
+                                    type="button"
+                                    id="selectHcl"
+                                    class="lab-action-button sample-lab-button"
+                                    data-sample="hcl"
+                                >
+                                    HCl Sample
+                                </button>
+
+                                <button
+                                    type="button"
+                                    id="selectWater"
+                                    class="lab-action-button sample-lab-button"
+                                    data-sample="water"
+                                >
+                                    Distilled Water
+                                </button>
+
+                                <button
+                                    type="button"
+                                    id="selectNaoh"
+                                    class="lab-action-button sample-lab-button"
+                                    data-sample="naoh"
+                                >
+                                    NaOH Sample
+                                </button>
+
+                                <button
+                                    type="button"
+                                    id="measurePh"
+                                    class="lab-action-button"
+                                    disabled
+                                >
+                                    Measure pH
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- OBSERVATION -->
+
+                        <aside class="lab-observation">
+
+                            <span class="instruction-label">
+                                LIVE OBSERVATION
+                            </span>
+
+
+                            <div class="reading-box">
+
+                                <span>
+                                    Selected Sample
+                                </span>
+
+                                <strong id="sampleValue">
+                                    —
+                                </strong>
+
+                            </div>
+
+
+                            <div class="reading-box">
+
+                                <span>
+                                    Formula
+                                </span>
+
+                                <strong id="formulaValue">
+                                    —
+                                </strong>
+
+                            </div>
+
+
+                            <div class="reading-box">
+
+                                <span>
+                                    pH Reading
+                                </span>
+
+                                <strong id="readingValue">
+                                    —
+                                </strong>
+
+                            </div>
+
+
+                            <div class="reading-box">
+
+                                <span>
+                                    Nature
+                                </span>
+
+                                <strong id="natureValue">
+                                    —
+                                </strong>
+
+                            </div>
+
+
+                            <div
+                                class="endpoint-indicator"
+                                id="measurementIndicator"
+                            >
+
+                                <span></span>
+
+                                Select a sample to begin.
+
+                            </div>
+
+                        </aside>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             WHAT HAPPENS
+        ================================================== -->
+
+        <section class="practical-section">
+
+            <div class="container">
+
+                <div class="what-happens">
+
+                    <div>
+
+                        <span>
+                            WHAT HAPPENS?
+                        </span>
+
+                        <h2>
+                            Why does the pH reading change?
+                        </h2>
+
+                    </div>
+
+
+                    <p>
+                        Different solutions contain different
+                        concentrations of hydrogen ions. The pH
+                        electrode detects the chemical activity
+                        of the solution and sends a signal to the
+                        meter. The meter converts that signal into
+                        a pH value, allowing us to identify the
+                        solution as acidic, neutral or basic.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             OBSERVATION
+        ================================================== -->
+
+        <section
+            class="practical-section soft-section"
+            id="observation"
+        >
+
+            <div class="container">
+
+                <div class="section-heading-simple">
+
+                    <span>
+                        08 • OBSERVATION
+                    </span>
+
+                    <h2>
+                        Record the Observation
+                    </h2>
+
+                </div>
+
+
+                <div class="observation-table-wrapper">
+
+                    <table class="observation-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Sample
+                                </th>
+
+                                <th>
+                                    Formula
+                                </th>
+
+                                <th>
+                                    Observed pH
+                                </th>
+
+                                <th>
+                                    Nature
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    Hydrochloric Acid
+                                </td>
+
+                                <td>
+                                    HCl
+                                </td>
+
+                                <td id="observationHcl">
+                                    —
+                                </td>
+
+                                <td id="natureHcl">
+                                    —
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Distilled Water
+                                </td>
+
+                                <td>
+                                    H₂O
+                                </td>
+
+                                <td id="observationWater">
+                                    —
+                                </td>
+
+                                <td id="natureWater">
+                                    —
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Sodium Hydroxide
+                                </td>
+
+                                <td>
+                                    NaOH
+                                </td>
+
+                                <td id="observationNaoh">
+                                    —
+                                </td>
+
+                                <td id="natureNaoh">
+                                    —
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             RESULT
+        ================================================== -->
+
+        <section
+            class="practical-section"
+            id="result"
+        >
+
+            <div class="container">
+
+                <div class="result-card">
+
+                    <div class="result-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <span>
+                            RESULT
+                        </span>
+
+                        <h2 id="resultHeading">
+                            Complete the virtual pH experiment
+                            to obtain the result.
+                        </h2>
+
+                        <p id="resultText">
+                            Measure the given solutions and record
+                            their stable pH values.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             QUIZ
+        ================================================== -->
+
+        <section
+            class="quiz-section"
+            id="quiz"
+        >
+
+            <div class="container">
+
+                <div class="section-heading-simple">
+
+                    <span>
+                        09 • QUICK QUIZ
+                    </span>
+
+                    <h2>
+                        Check Your Understanding
+                    </h2>
+
+                </div>
+
+
+                <div class="quiz-card">
+
+
+                    <div
+                        class="quiz-question"
+                        data-question="1"
+                    >
+
+                        <span>
+                            Question 1 of 3
+                        </span>
+
+                        <h3>
+                            What does pH indicate?
+                        </h3>
+
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q1"
+                                value="a"
+                            >
+
+                            Temperature of a solution
+
+                        </label>
+
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q1"
+                                value="b"
+                            >
+
+                            Acidity or basicity of a solution
+
+                        </label>
+
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q1"
+                                value="c"
+                            >
+
+                            Volume of a solution
+
+                        </label>
+
+                    </div>
+
+
+
+                    <div
+                        class="quiz-question"
+                        data-question="2"
+                    >
+
+                        <span>
+                            Question 2 of 3
+                        </span>
+
+                        <h3>
+                            Which pH value represents a neutral solution?
+                        </h3>
+
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q2"
+                                value="a"
+                            >
+
+                            2
+
+                        </label>
+
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q2"
+                                value="b"
+                            >
+
+                            7
+
+                        </label>
+
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q2"
+                                value="c"
+                            >
+
+                            12
+
+                        </label>
+
+                    </div>
+
+
+
+                    <div
+                        class="quiz-question"
+                        data-question="3"
+                    >
+
+                        <span>
+                            Question 3 of 3
+                        </span>
+
+                        <h3>
+                            Which sample is basic?
+                        </h3>
+
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q3"
+                                value="a"
+                            >
+
+                            HCl with pH 2
+
+                        </label>
+
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q3"
+                                value="b"
+                            >
+
+                            Distilled water with pH 7
+
+                        </label>
+
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="q3"
+                                value="c"
+                            >
+
+                            NaOH with pH 12
+
+                        </label>
+
+                    </div>
+
+
+
+                    <button
+                        type="button"
+                        class="quiz-submit"
+                        id="quizSubmit"
+                    >
+                        Check Answers
+                    </button>
+
+
+                    <div
+                        class="quiz-result"
+                        id="quizResult"
+                    ></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PREVIOUS / NEXT
+        ================================================== -->
+
+        <section class="practical-navigation">
+
+            <div class="container">
+
+                <a
+                    href="../practical-01/index.html"
+                    class="practical-nav-card"
+                >
+
+                    <span>
+                        ←
+                    </span>
+
+                    <div>
+
+                        <small>
+                            PREVIOUS PRACTICAL
+                        </small>
+
+                        <strong>
+                            Acid–Base Titration
+                        </strong>
+
+                    </div>
+
+                </a>
+
+
+                <a
+                    href="../practical-03/index.html"
+                    class="practical-nav-card next"
+                >
+
+                    <div>
+
+                        <small>
+                            NEXT PRACTICAL
+                        </small>
+
+                        <strong>
+                            Acid–Base Indicators
+                        </strong>
+
+                    </div>
+
+                    <span>
+                        →
+                    </span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+    <!-- =================================================
+         FOOTER
+    ================================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+
+            <div class="footer-main">
+
+
+                <!-- BRAND -->
+
+                <div class="footer-brand">
+
+                    <a
+                        href="../../index.html"
+                        class="brand"
+                    >
+
+                        <div class="brand-icon">
+                            ⚗
+                        </div>
+
+                        <div class="brand-text">
+
+                            <div>
+
+                                <span class="brand-hindi">
+                                    रसायन
+                                </span>
+
+                                <span class="brand-english">
+                                    Verse
+                                </span>
+
+                            </div>
+
+                            <small>
+                                VIRTUAL CHEMISTRY LAB
+                            </small>
+
+                        </div>
+
+                    </a>
+
+
+                    <p>
+                        An interactive virtual chemistry
+                        laboratory designed to help students
+                        understand chemistry through guided
+                        practical learning.
+                    </p>
+
+                </div>
+
+
+
+                <!-- PLATFORM -->
+
+                <div class="footer-column">
+
+                    <h3>
+                        Platform
+                    </h3>
+
+                    <a href="../../index.html">
+                        Home
+                    </a>
+
+                    <a href="../../experiments.html">
+                        Experiments
+                    </a>
+
+                    <a href="../../learn-chemistry.html">
+                        Learn Chemistry
+                    </a>
+
+                    <a href="../../periodic-table.html">
+                        Periodic Table
+                    </a>
+
+                </div>
+
+
+
+                <!-- INFORMATION -->
+
+                <div class="footer-column">
+
+                    <h3>
+                        Information
+                    </h3>
+
+                    <a href="../../about.html">
+                        About Us
+                    </a>
+
+                    <a href="../../contact.html">
+                        Contact
+                    </a>
+
+                </div>
+
+
+
+                <!-- LAB STATUS -->
+
+                <div
+                    class="footer-column footer-lab-status"
+                >
+
+                    <h3>
+                        Laboratory
+                    </h3>
+
+                    <div class="footer-status">
+
+                        <span></span>
+
+                        Virtual Lab Online
+
+                    </div>
+
+                    <p>
+                        Learn. Experiment. Understand.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FOOTER BOTTOM -->
+
+            <div class="footer-bottom">
+
+                <span>
+                    ©
+                    <span data-current-year>
+                        2026
+                    </span>
+                    RasayanVerse. All rights reserved.
+                </span>
+
+                <span>
+                    Built for Chemistry Learning.
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =================================================
+         JAVASCRIPT
+    ================================================== -->
+
+    <script
+        src="../../js/theme.js"
+    ></script>
+
+    <script
+        src="../../js/main.js"
+    ></script>
+
+    <script
+        src="practical.js"
+    ></script>
+
+
+</body>
+
+</html>

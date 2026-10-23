@@ -1,0 +1,3173 @@
+/* =========================================================
+   RASAYANVERSE
+   PRACTICAL 01
+   ACID–BASE TITRATION
+   ========================================================= */
+
+
+/* =========================================================
+   PRACTICAL HERO
+   ========================================================= */
+
+.practical-hero {
+    padding: 48px 0 70px;
+
+    background:
+        radial-gradient(
+            circle at 90% 20%,
+            rgba(45,212,191,.10),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 10% 40%,
+            rgba(59,130,246,.08),
+            transparent 30%
+        ),
+        var(--bg);
+}
+
+
+.breadcrumb {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 35px;
+
+    color: var(--text-muted);
+
+    font-size: .72rem;
+}
+
+
+.breadcrumb a {
+    color: var(--primary);
+
+    font-weight: 700;
+}
+
+
+.practical-hero-grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.4fr)
+        minmax(300px, .6fr);
+
+    align-items: center;
+
+    gap: 60px;
+}
+
+
+.practical-label {
+    display: inline-flex;
+
+    padding:
+        6px 10px;
+
+    border-radius: 999px;
+
+    background:
+        var(--surface-blue);
+
+    color:
+        var(--primary);
+
+    font-size: .66rem;
+
+    font-weight: 800;
+
+    letter-spacing: .09em;
+}
+
+
+.practical-hero h1 {
+    margin:
+        18px 0 17px;
+
+    max-width: 750px;
+
+    font-family:
+        "Poppins",
+        sans-serif;
+
+    font-size:
+        clamp(
+            2.5rem,
+            5vw,
+            4.5rem
+        );
+
+    line-height: 1.04;
+
+    letter-spacing: -.045em;
+}
+
+
+.practical-hero h1 span {
+    display: block;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--primary),
+            var(--teal)
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+
+.practical-hero > .container
+.practical-hero-grid > div > p {
+    max-width: 720px;
+
+    margin: 0;
+
+    color: var(--text-muted);
+
+    font-size: 1rem;
+
+    line-height: 1.8;
+}
+
+
+.practical-meta {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 9px;
+
+    margin-top: 25px;
+}
+
+
+.practical-meta span {
+    padding:
+        8px 11px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 8px;
+
+    background: var(--surface);
+
+    color: var(--text-muted);
+
+    font-size: .68rem;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   REACTION CARD
+   ========================================================= */
+
+.hero-reaction-card {
+    padding: 30px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--surface),
+            var(--surface-soft)
+        );
+
+    box-shadow:
+        var(--shadow-md);
+}
+
+
+.reaction-card-title {
+    color: var(--text-muted);
+
+    font-size: .64rem;
+
+    font-weight: 800;
+
+    letter-spacing: .1em;
+
+    text-transform: uppercase;
+}
+
+
+.reaction-card-equation {
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 9px;
+
+    margin:
+        22px 0 14px;
+
+    color: var(--primary);
+
+    font-family:
+        "Poppins",
+        sans-serif;
+
+    font-size: 1.15rem;
+}
+
+
+.reaction-card-equation span {
+    color: var(--text-muted);
+}
+
+
+.hero-reaction-card small {
+    color: var(--text-muted);
+
+    font-size: .72rem;
+}
+
+
+/* =========================================================
+   STICKY PRACTICAL NAV
+   ========================================================= */
+
+.practical-sticky-nav {
+    position: sticky;
+
+    top: 0;
+
+    z-index: 50;
+
+    border-top:
+        1px solid var(--border);
+
+    border-bottom:
+        1px solid var(--border);
+
+    background:
+        color-mix(
+            in srgb,
+            var(--surface) 94%,
+            transparent
+        );
+
+    backdrop-filter:
+        blur(15px);
+}
+
+
+.practical-nav-inner {
+    display: flex;
+
+    align-items: center;
+
+    gap: 4px;
+
+    overflow-x: auto;
+
+    scrollbar-width: none;
+}
+
+
+.practical-nav-inner::-webkit-scrollbar {
+    display: none;
+}
+
+
+.practical-nav-inner a {
+    flex: 0 0 auto;
+
+    padding:
+        14px 11px;
+
+    color: var(--text-muted);
+
+    font-size: .66rem;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+.practical-nav-inner a:hover {
+    color: var(--primary);
+}
+
+
+.practical-nav-inner .nav-lab-link {
+    color: white;
+
+    background:
+        var(--primary);
+
+    border-radius: 7px;
+}
+
+
+/* =========================================================
+   GENERAL PRACTICAL SECTIONS
+   ========================================================= */
+
+.practical-section {
+    padding:
+        85px 0;
+}
+
+
+.soft-section {
+    background:
+        var(--surface-soft);
+}
+
+
+.section-heading-simple {
+    max-width: 760px;
+
+    margin-bottom: 38px;
+}
+
+
+.section-heading-simple > span {
+    color: var(--primary);
+
+    font-size: .64rem;
+
+    font-weight: 800;
+
+    letter-spacing: .1em;
+}
+
+
+.section-heading-simple h2 {
+    margin:
+        9px 0 0;
+
+    font-family:
+        "Poppins",
+        sans-serif;
+
+    font-size:
+        clamp(
+            1.7rem,
+            3vw,
+            2.4rem
+        );
+
+    letter-spacing: -.025em;
+}
+
+
+.section-heading-simple p {
+    margin:
+        10px 0 0;
+
+    color: var(--text-muted);
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   CONCEPT
+   ========================================================= */
+
+.concept-grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.3fr)
+        minmax(280px, .7fr);
+
+    gap: 35px;
+}
+
+
+.concept-main p {
+    margin:
+        0 0 16px;
+
+    color: var(--text-muted);
+
+    font-size: .88rem;
+
+    line-height: 1.85;
+}
+
+
+.concept-highlight {
+    align-self: start;
+
+    padding: 27px;
+
+    border:
+        1px solid
+        color-mix(
+            in srgb,
+            var(--primary) 18%,
+            var(--border)
+        );
+
+    border-radius: 17px;
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--surface-blue),
+            var(--surface)
+        );
+}
+
+
+.concept-formula {
+    padding:
+        17px;
+
+    border-radius: 10px;
+
+    background:
+        var(--surface);
+
+    color: var(--primary);
+
+    font-family:
+        "Poppins",
+        sans-serif;
+
+    font-size: 1rem;
+
+    font-weight: 700;
+
+    text-align: center;
+}
+
+
+.concept-highlight p {
+    margin:
+        17px 0 0;
+
+    color: var(--text-muted);
+
+    font-size: .78rem;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   AIM
+   ========================================================= */
+
+.info-card {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 22px;
+
+    padding: 30px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 18px;
+
+    background: var(--surface);
+
+    box-shadow: var(--shadow-sm);
+}
+
+
+.info-icon {
+    flex: 0 0 auto;
+
+    width: 58px;
+    height: 58px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 15px;
+
+    background:
+        var(--surface-blue);
+
+    font-size: 1.4rem;
+}
+
+
+.info-label {
+    color: var(--primary);
+
+    font-size: .62rem;
+
+    font-weight: 800;
+
+    letter-spacing: .1em;
+}
+
+
+.info-card h2 {
+    margin:
+        8px 0 0;
+
+    font-family:
+        "Poppins",
+        sans-serif;
+
+    font-size: 1.05rem;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   ITEMS
+   ========================================================= */
+
+.items-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 16px;
+}
+
+
+.item-card {
+    padding: 22px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 15px;
+
+    background: var(--surface);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+
+.item-card:hover {
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        var(--shadow-md);
+}
+
+
+.item-visual {
+    width: 55px;
+    height: 55px;
+
+    display: grid;
+
+    place-items: center;
+
+    margin-bottom: 17px;
+
+    border-radius: 14px;
+
+    background:
+        var(--surface-blue);
+
+    color: var(--primary);
+
+    font-size: 1.35rem;
+}
+
+
+.item-card h3 {
+    margin: 0;
+
+    font-family:
+        "Poppins",
+        sans-serif;
+
+    font-size: .95rem;
+}
+
+
+.item-card p {
+    margin:
+        8px 0 0;
+
+    color: var(--text-muted);
+
+    font-size: .73rem;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   CHEMICALS
+   ========================================================= */
+
+.chemical-list {
+    max-width: 800px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    background: var(--surface);
+}
+
+
+.chemical-row {
+    display: flex;
+
+    align-items: center;
+
+    gap: 17px;
+
+    padding:
+        20px 23px;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+
+.chemical-row:last-child {
+    border-bottom: 0;
+}
+
+
+.chemical-color {
+    width: 14px;
+    height: 48px;
+
+    border-radius: 7px;
+}
+
+
+.chemical-color.blue {
+    background:
+        linear-gradient(
+            #60a5fa,
+            #2563eb
+        );
+}
+
+
+.chemical-color.teal {
+    background:
+        linear-gradient(
+            #5eead4,
+            #0f8b8d
+        );
+}
+
+
+.chemical-color.pink {
+    background:
+        linear-gradient(
+            #f9a8d4,
+            #ec4899
+        );
+}
+
+
+.chemical-row strong {
+    display: block;
+
+    font-size: .83rem;
+}
+
+
+.chemical-row span {
+    display: block;
+
+    margin-top: 4px;
+
+    color: var(--text-muted);
+
+    font-size: .7rem;
+}
+
+
+/* =========================================================
+   SAFETY
+   ========================================================= */
+
+.safety-box {
+    padding: 32px;
+
+    border:
+        1px solid
+        rgba(245,158,11,.25);
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(245,158,11,.08),
+            var(--surface)
+        );
+}
+
+
+.safety-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    margin-bottom: 25px;
+}
+
+
+.safety-title > span {
+    width: 52px;
+    height: 52px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 14px;
+
+    background:
+        rgba(245,158,11,.13);
+
+    color: #d97706;
+
+    font-size: 1.3rem;
+}
+
+
+.safety-title > div > span {
+    color: #b45309;
+
+    font-size: .61rem;
+
+    font-weight: 800;
+
+    letter-spacing: .1em;
+}
+
+
+.safety-title h2 {
+    margin:
+        5px 0 0;
+
+    font-family:
+        "Poppins",
+        sans-serif;
+
+    font-size: 1.35rem;
+}
+
+
+.safety-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 10px;
+}
+
+
+.safety-grid div {
+    padding:
+        13px 15px;
+
+    border-radius: 9px;
+
+    background:
+        rgba(255,255,255,.65);
+
+    color: var(--text-muted);
+
+    font-size: .74rem;
+
+    line-height: 1.55;
+}
+
+
+/* =========================================================
+   PROCEDURE
+   ========================================================= */
+
+.procedure-list {
+    position: relative;
+
+    max-width: 850px;
+}
+
+
+.procedure-list::before {
+    content: "";
+
+    position: absolute;
+
+    left: 21px;
+    top: 22px;
+    bottom: 22px;
+
+    width: 2px;
+
+    background:
+        linear-gradient(
+            var(--primary),
+            var(--teal)
+        );
+
+    opacity: .2;
+}
+
+
+.procedure-step {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 44px 1fr;
+
+    gap: 19px;
+
+    padding:
+        0 0 28px;
+}
+
+
+.procedure-step:last-child {
+    padding-bottom: 0;
+}
+
+
+.step-number {
+    position: relative;
+
+    z-index: 2;
+
+    width: 43px;
+    height: 43px;
+
+    display: grid;
+
+    place-items: center;
+
+    border:
+        1px solid
+        color-mix(
+            in srgb,
+            var(--primary) 20%,
+            var(--border)
+        );
+
+    border-radius: 50%;
+
+    background: var(--surface);
+
+    color: var(--primary);
+
+    font-size: .67rem;
+
+    font-weight: 800;
+}
+
+
+.procedure-step h3 {
+    margin: 2px 0 5px;
+
+    font-family:
+        "Poppins",
+        sans-serif;
+
+    font-size: .95rem;
+}
+
+
+.procedure-step p {
+    margin: 0;
+
+    color: var(--text-muted);
+
+    font-size: .76rem;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   VIRTUAL LAB
+   ========================================================= */
+
+.virtual-lab-section {
+    padding:
+        95px 0;
+
+    background:
+        #0f172a;
+}
+
+
+.virtual-lab-header {
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 28px;
+}
+
+
+.virtual-lab-header > div > span {
+    color:
+        #5eead4;
+
+    font-size: .63rem;
+
+    font-weight: 800;
+
+    letter-spacing: .1em;
+}
+
+
+.virtual-lab-header h2 {
+    margin:
+        8px 0;
+
+    color: white;
+
+    font-family:
+        "Poppins",
+        sans-serif;
+
+    font-size:
+        clamp(
+            1.8rem,
+            4vw,
+            2.7rem
+        );
+}
+
+
+.virtual-lab-header p {
+    margin: 0;
+
+    color:
+        #94a3b8;
+
+    font-size: .8rem;
+}
+
+
+.reset-button {
+    flex: 0 0 auto;
+
+    padding:
+        10px 15px;
+
+    border:
+        1px solid #334155;
+
+    border-radius: 9px;
+
+    background:
+        #1e293b;
+
+    color:
+        #e2e8f0;
+
+    cursor: pointer;
+
+    font-size: .68rem;
+
+    font-weight: 700;
+}
+
+
+.reset-button:hover {
+    border-color:
+        #5eead4;
+
+    color:
+        #5eead4;
+}
+
+
+/* LAB */
+
+.virtual-lab {
+    overflow: hidden;
+
+    border:
+        1px solid #334155;
+
+    border-radius: 20px;
+
+    background:
+        #172033;
+
+    box-shadow:
+        0 30px 80px
+        rgba(0,0,0,.3);
+}
+
+
+.lab-control-bar {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding:
+        13px 18px;
+
+    border-bottom:
+        1px solid #334155;
+
+    color:
+        #94a3b8;
+
+    font-size: .68rem;
+
+    font-weight: 700;
+}
+
+
+.lab-control-bar > div:first-child {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.lab-live-dot {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background:
+        #34d399;
+
+    box-shadow:
+        0 0 10px
+        rgba(52,211,153,.7);
+}
+
+
+#labStatus {
+    color:
+        #5eead4;
+}
+
+
+/* LAB WORKSPACE */
+
+.lab-workspace {
+    display: grid;
+
+    grid-template-columns:
+        210px minmax(450px, 1fr) 190px;
+
+    min-height: 570px;
+}
+
+
+/* INSTRUCTION */
+
+.instruction-panel,
+.lab-observation {
+    padding: 23px;
+
+    background:
+        #111827;
+
+    color:
+        #e2e8f0;
+}
+
+
+.instruction-panel {
+    border-right:
+        1px solid #334155;
+}
+
+
+.lab-observation {
+    border-left:
+        1px solid #334155;
+}
+
+
+.instruction-label {
+    color:
+        #5eead4;
+
+    font-size: .59rem;
+
+    font-weight: 800;
+
+    letter-spacing: .1em;
+}
+
+
+.instruction-panel h3 {
+    margin:
+        12px 0 8px;
+
+    color: white;
+
+    font-family:
+        "Poppins",
+        sans-serif;
+
+    font-size: .95rem;
+
+    line-height: 1.45;
+}
+
+
+.instruction-panel p {
+    margin: 0;
+
+    color:
+        #94a3b8;
+
+    font-size: .7rem;
+
+    line-height: 1.65;
+}
+
+
+.instruction-progress {
+    height: 4px;
+
+    margin-top: 20px;
+
+    overflow: hidden;
+
+    border-radius: 999px;
+
+    background:
+        #334155;
+}
+
+
+.instruction-progress div {
+    width: 25%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #2563eb,
+            #14b8a6
+        );
+
+    transition:
+        width .35s ease;
+}
+
+
+.instruction-count {
+    display: block;
+
+    margin-top: 8px;
+
+    color:
+        #64748b;
+
+    font-size: .59rem;
+}
+
+
+.lab-tip {
+    display: flex;
+
+    gap: 8px;
+
+    margin-top: 28px;
+
+    padding: 11px;
+
+    border-radius: 9px;
+
+    background:
+        #1e293b;
+
+    color:
+        #94a3b8;
+
+    font-size: .62rem;
+
+    line-height: 1.55;
+}
+
+
+/* =========================================================
+   TITRATION SCENE
+   ========================================================= */
+
+.titration-scene {
+    position: relative;
+
+    min-height: 570px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            180deg,
+            #eaf1f4 0%,
+            #f7fafb 57%,
+            #d1b590 57%,
+            #bd9b70 100%
+        );
+}
+
+
+/* WALL */
+
+.scene-wall {
+    position: absolute;
+
+    inset:
+        0 0 43% 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.45),
+            rgba(226,232,240,.25)
+        );
+}
+
+
+.scene-window {
+    position: absolute;
+
+    top: 30px;
+    right: 28px;
+
+    width: 92px;
+    height: 68px;
+
+    border:
+        6px solid #cbd5e1;
+
+    background:
+        linear-gradient(
+            135deg,
+            #bfdbfe,
+            #e0f2fe
+        );
+
+    box-shadow:
+        inset 0 0 15px
+        rgba(255,255,255,.8);
+}
+
+
+.scene-shelf {
+    position: absolute;
+
+    left: 25px;
+    top: 35px;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    gap: 9px;
+
+    width: 135px;
+    height: 55px;
+
+    border-bottom:
+        5px solid #94a3b8;
+}
+
+
+.scene-shelf span {
+    width: 20px;
+    height: 36px;
+
+    border-radius:
+        5px 5px 3px 3px;
+
+    background:
+        #38bdf8;
+
+    box-shadow:
+        inset 0 0 0 2px
+        rgba(255,255,255,.45);
+}
+
+
+.scene-shelf span:nth-child(2) {
+    height: 45px;
+
+    background:
+        #14b8a6;
+}
+
+
+.scene-shelf span:nth-child(3) {
+    height: 31px;
+
+    background:
+        #f59e0b;
+}
+
+
+/* BURETTE STAND */
+
+.titration-burette {
+    position: absolute;
+
+    top: 60px;
+    left: 48%;
+
+    width: 145px;
+    height: 365px;
+
+    transform:
+        translateX(-50%);
+}
+
+
+.stand-base {
+    position: absolute;
+
+    left: 2px;
+    bottom: 5px;
+
+    width: 115px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    background:
+        #475569;
+
+    box-shadow:
+        0 5px 10px
+        rgba(15,23,42,.15);
+}
+
+
+.stand-rod {
+    position: absolute;
+
+    left: 51px;
+    top: 15px;
+
+    width: 8px;
+    height: 340px;
+
+    border-radius: 999px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #64748b,
+            #cbd5e1,
+            #64748b
+        );
+}
+
+
+.stand-clamp {
+    position: absolute;
+
+    top: 76px;
+    left: 42px;
+
+    width: 65px;
+    height: 10px;
+
+    border-radius: 5px;
+
+    background:
+        #64748b;
+}
+
+
+.burette-tube {
+    position: absolute;
+
+    top: 18px;
+    left: 78px;
+
+    width: 31px;
+    height: 280px;
+
+    border:
+        2px solid
+        rgba(51,65,85,.7);
+
+    border-radius:
+        8px 8px 5px 5px;
+
+    background:
+        rgba(255,255,255,.45);
+
+    overflow: visible;
+}
+
+
+.burette-solution {
+    position: absolute;
+
+    left: 2px;
+    right: 2px;
+
+    bottom: 31px;
+
+    height: 78%;
+
+    border-radius:
+        0 0 4px 4px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(45,212,191,.55),
+            rgba(14,165,233,.65)
+        );
+
+    transition:
+        height .3s ease;
+}
+
+
+.graduations {
+    position: absolute;
+
+    top: 15px;
+    right: -14px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    height: 240px;
+}
+
+
+.graduations span {
+    width: 9px;
+    height: 1px;
+
+    background:
+        #475569;
+}
+
+
+.burette-valve {
+    position: absolute;
+
+    bottom: 25px;
+    left: 50%;
+
+    width: 45px;
+    height: 8px;
+
+    transform:
+        translateX(-50%);
+
+    border-radius: 4px;
+
+    background:
+        #475569;
+
+    transition:
+        transform .2s ease;
+}
+
+
+.burette-valve::after {
+    content: "";
+
+    position: absolute;
+
+    left: 19px;
+    top: -12px;
+
+    width: 7px;
+    height: 25px;
+
+    border-radius: 5px;
+
+    background:
+        #64748b;
+}
+
+
+.falling-drop {
+    position: absolute;
+
+    left: 50%;
+
+    bottom: 13px;
+
+    width: 7px;
+    height: 11px;
+
+    border-radius:
+        50% 50% 50% 50%;
+
+    background:
+        #14b8a6;
+
+    opacity: 0;
+
+    transform:
+        translateX(-50%);
+}
+
+
+.falling-drop.active {
+    animation:
+        titrationDrop
+        .7s
+        ease-in
+        forwards;
+}
+
+
+@keyframes titrationDrop {
+
+    0% {
+        opacity: 1;
+
+        transform:
+            translate(
+                -50%,
+                0
+            );
+    }
+
+    100% {
+        opacity: 0;
+
+        transform:
+            translate(
+                -50%,
+                135px
+            );
+    }
+
+}
+
+
+.burette-value {
+    position: absolute;
+
+    top: -2px;
+    left: 122px;
+
+    min-width: 60px;
+
+    padding:
+        5px 7px;
+
+    border-radius: 6px;
+
+    background:
+        #0f172a;
+
+    color:
+        #5eead4;
+
+    font-size: .58rem;
+
+    font-weight: 800;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   FLASK
+   ========================================================= */
+
+.titration-flask {
+    position: absolute;
+
+    left: 48%;
+
+    bottom: 82px;
+
+    width: 185px;
+    height: 180px;
+
+    transform:
+        translateX(-50%);
+}
+
+
+.titration-flask
+.flask-neck {
+    position: absolute;
+
+    left: 65px;
+    top: 0;
+
+    width: 55px;
+    height: 60px;
+
+    border:
+        3px solid
+        rgba(51,65,85,.65);
+
+    border-bottom: 0;
+
+    border-radius:
+        9px 9px 0 0;
+
+    background:
+        rgba(255,255,255,.35);
+}
+
+
+.titration-flask-body {
+    position: absolute;
+
+    left: 18px;
+    bottom: 0;
+
+    width: 150px;
+    height: 130px;
+
+    overflow: hidden;
+
+    clip-path:
+        polygon(
+            31% 0,
+            69% 0,
+            69% 14%,
+            100% 100%,
+            0 100%,
+            31% 14%
+        );
+
+    border:
+        3px solid
+        rgba(51,65,85,.6);
+
+    background:
+        rgba(255,255,255,.35);
+}
+
+
+.acid-liquid {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 48%;
+
+    background:
+        linear-gradient(
+            180deg,
+            #dbeafe,
+            #bfdbfe
+        );
+
+    transition:
+        background .5s ease,
+        height .3s ease;
+}
+
+
+.acid-liquid.endpoint {
+    background:
+        linear-gradient(
+            180deg,
+            #f9a8d4,
+            #ec4899
+        );
+}
+
+
+.lab-bubble {
+    position: absolute;
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,.7);
+
+    opacity: .8;
+
+    animation:
+        labBubble
+        2.5s
+        ease-in
+        infinite;
+}
+
+
+.bubble-a {
+    left: 35%;
+    bottom: 10px;
+}
+
+
+.bubble-b {
+    left: 65%;
+    bottom: 7px;
+
+    animation-delay: .8s;
+}
+
+
+@keyframes labBubble {
+
+    0% {
+        transform:
+            translateY(0);
+
+        opacity: 0;
+    }
+
+    25% {
+        opacity: .8;
+    }
+
+    100% {
+        transform:
+            translateY(-45px);
+
+        opacity: 0;
+    }
+
+}
+
+
+.flask-rim {
+    position: absolute;
+
+    left: 62px;
+    top: -3px;
+
+    width: 61px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background:
+        #64748b;
+}
+
+
+.flask-volume {
+    position: absolute;
+
+    left: 45px;
+    bottom: -24px;
+
+    color:
+        #475569;
+
+    font-size: .58rem;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   BOTTLES
+   ========================================================= */
+
+.indicator-bottle {
+    position: absolute;
+
+    right: 65px;
+    bottom: 78px;
+
+    width: 75px;
+    height: 105px;
+}
+
+
+.indicator-cap {
+    width: 31px;
+    height: 13px;
+
+    margin:
+        0 auto;
+
+    border-radius:
+        4px 4px 0 0;
+
+    background:
+        #475569;
+}
+
+
+.indicator-body {
+    height: 82px;
+
+    padding-top: 20px;
+
+    border:
+        2px solid #64748b;
+
+    border-radius:
+        9px 9px 6px 6px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.75),
+            rgba(248,250,252,.4)
+        );
+
+    text-align: center;
+}
+
+
+.indicator-body::before {
+    content: "";
+
+    display: block;
+
+    width: 45px;
+    height: 30px;
+
+    margin:
+        -5px auto 7px;
+
+    border-radius: 5px;
+
+    background:
+        #fbcfe8;
+}
+
+
+.indicator-body span {
+    display: block;
+
+    position: relative;
+
+    z-index: 2;
+
+    color:
+        #475569;
+
+    font-size: .4rem;
+
+    font-weight: 800;
+}
+
+
+.naoh-bottle {
+    position: absolute;
+
+    left: 25px;
+    bottom: 78px;
+
+    width: 70px;
+    height: 105px;
+}
+
+
+.naoh-cap {
+    width: 30px;
+    height: 12px;
+
+    margin: auto;
+
+    border-radius:
+        4px 4px 0 0;
+
+    background:
+        #334155;
+}
+
+
+.naoh-body {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 82px;
+
+    border:
+        2px solid #64748b;
+
+    border-radius:
+        8px 8px 5px 5px;
+
+    background:
+        rgba(255,255,255,.7);
+}
+
+
+.naoh-body strong {
+    color:
+        #0f8b8d;
+
+    font-size: .8rem;
+}
+
+
+.naoh-body small {
+    margin-top: 3px;
+
+    color:
+        #64748b;
+
+    font-size: .47rem;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   ACTION BUTTONS
+   ========================================================= */
+
+.lab-actions {
+    position: absolute;
+
+    left: 50%;
+    bottom: 20px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    width: 95%;
+
+    transform:
+        translateX(-50%);
+}
+
+
+.lab-action-button {
+    padding:
+        9px 12px;
+
+    border:
+        1px solid #94a3b8;
+
+    border-radius: 8px;
+
+    background:
+        rgba(255,255,255,.9);
+
+    color:
+        #1e293b;
+
+    cursor: pointer;
+
+    font-size: .62rem;
+
+    font-weight: 800;
+
+    box-shadow:
+        0 3px 8px
+        rgba(15,23,42,.08);
+
+    transition:
+        transform .2s ease,
+        background .2s ease,
+        color .2s ease;
+}
+
+
+.lab-action-button:hover:not(:disabled) {
+    transform:
+        translateY(-2px);
+
+    background:
+        #1554a3;
+
+    color:
+        white;
+}
+
+
+.lab-action-button:disabled {
+    cursor: not-allowed;
+
+    opacity: .4;
+}
+
+
+/* =========================================================
+   OBSERVATION
+   ========================================================= */
+
+.reading-box {
+    margin-top: 15px;
+
+    padding:
+        12px;
+
+    border:
+        1px solid #334155;
+
+    border-radius: 9px;
+
+    background:
+        #1e293b;
+}
+
+
+.reading-box span {
+    display: block;
+
+    color:
+        #64748b;
+
+    font-size: .56rem;
+}
+
+
+.reading-box strong {
+    display: block;
+
+    margin-top: 4px;
+
+    color:
+        #e2e8f0;
+
+    font-size: .8rem;
+}
+
+
+.endpoint-indicator {
+    display: flex;
+
+    gap: 7px;
+
+    margin-top: 20px;
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    background:
+        #1e293b;
+
+    color:
+        #94a3b8;
+
+    font-size: .57rem;
+
+    line-height: 1.45;
+}
+
+
+.endpoint-indicator span {
+    flex: 0 0 auto;
+
+    width: 6px;
+    height: 6px;
+
+    margin-top: 4px;
+
+    border-radius: 50%;
+
+    background:
+        #f59e0b;
+}
+
+
+.endpoint-indicator.reached {
+    color:
+        #a7f3d0;
+
+    background:
+        #12352d;
+}
+
+
+.endpoint-indicator.reached span {
+    background:
+        #34d399;
+
+    box-shadow:
+        0 0 7px
+        rgba(52,211,153,.7);
+}
+
+
+/* =========================================================
+   WHAT HAPPENS
+   ========================================================= */
+
+.what-happens {
+    display: grid;
+
+    grid-template-columns:
+        minmax(250px, .65fr)
+        minmax(0, 1.35fr);
+
+    gap: 45px;
+
+    padding:
+        38px;
+
+    border:
+        1px solid
+        color-mix(
+            in srgb,
+            var(--teal) 20%,
+            var(--border)
+        );
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--surface-teal),
+            var(--surface)
+        );
+}
+
+
+.what-happens > div > span {
+    color:
+        var(--teal);
+
+    font-size: .61rem;
+
+    font-weight: 800;
+
+    letter-spacing: .1em;
+}
+
+
+.what-happens h2 {
+    margin:
+        9px 0 0;
+
+    font-family:
+        "Poppins",
+        sans-serif;
+
+    font-size: 1.6rem;
+}
+
+
+.what-happens > p {
+    margin: 0;
+
+    color: var(--text-muted);
+
+    font-size: .83rem;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   OBSERVATION TABLE
+   ========================================================= */
+
+.observation-table-wrapper {
+    overflow-x: auto;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 15px;
+
+    background: var(--surface);
+}
+
+
+.observation-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 650px;
+}
+
+
+.observation-table th,
+.observation-table td {
+    padding:
+        16px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    text-align: left;
+
+    font-size: .72rem;
+}
+
+
+.observation-table th {
+    background:
+        var(--surface-soft);
+
+    color:
+        var(--text-muted);
+
+    font-size: .61rem;
+
+    font-weight: 800;
+
+    letter-spacing: .06em;
+
+    text-transform: uppercase;
+}
+
+
+.observation-table td {
+    color:
+        var(--text);
+}
+
+
+.observation-table tr:last-child td {
+    border-bottom: 0;
+}
+
+
+/* =========================================================
+   RESULT
+   ========================================================= */
+
+.result-card {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 20px;
+
+    padding: 32px;
+
+    border:
+        1px solid
+        color-mix(
+            in srgb,
+            var(--teal) 25%,
+            var(--border)
+        );
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--surface-teal),
+            var(--surface)
+        );
+}
+
+
+.result-icon {
+    width: 52px;
+    height: 52px;
+
+    display: grid;
+
+    place-items: center;
+
+    flex: 0 0 auto;
+
+    border-radius: 50%;
+
+    background:
+        #d1fae5;
+
+    color:
+        #047857;
+
+    font-size: 1.3rem;
+
+    font-weight: 800;
+}
+
+
+.result-card > div:last-child > span {
+    color:
+        var(--teal);
+
+    font-size: .6rem;
+
+    font-weight: 800;
+
+    letter-spacing: .1em;
+}
+
+
+.result-card h2 {
+    margin:
+        8px 0 7px;
+
+    font-family:
+        "Poppins",
+        sans-serif;
+
+    font-size: 1.1rem;
+}
+
+
+.result-card p {
+    margin: 0;
+
+    color:
+        var(--text-muted);
+
+    font-size: .75rem;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   QUIZ
+   ========================================================= */
+
+.quiz-section {
+    padding:
+        90px 0;
+
+    background:
+        var(--surface-soft);
+}
+
+
+.quiz-card {
+    max-width: 800px;
+
+    padding: 32px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 18px;
+
+    background:
+        var(--surface);
+
+    box-shadow:
+        var(--shadow-sm);
+}
+
+
+.quiz-question {
+    padding:
+        0 0 28px;
+
+    margin-bottom:
+        28px;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+
+.quiz-question > span {
+    color:
+        var(--primary);
+
+    font-size: .6rem;
+
+    font-weight: 800;
+
+    letter-spacing: .08em;
+}
+
+
+.quiz-question h3 {
+    margin:
+        8px 0 15px;
+
+    font-family:
+        "Poppins",
+        sans-serif;
+
+    font-size: .95rem;
+}
+
+
+.quiz-question label {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin:
+        9px 0;
+
+    color:
+        var(--text-muted);
+
+    font-size: .74rem;
+
+    cursor: pointer;
+}
+
+
+.quiz-question input {
+    accent-color:
+        var(--primary);
+}
+
+
+.quiz-submit {
+    padding:
+        11px 18px;
+
+    border: 0;
+
+    border-radius: 9px;
+
+    background:
+        var(--primary);
+
+    color:
+        white;
+
+    cursor: pointer;
+
+    font-size: .7rem;
+
+    font-weight: 800;
+}
+
+
+.quiz-submit:hover {
+    background:
+        var(--primary-dark);
+}
+
+
+.quiz-result {
+    display: none;
+
+    margin-top: 20px;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    background:
+        var(--surface-teal);
+
+    color:
+        var(--text);
+
+    font-size: .76rem;
+
+    font-weight: 700;
+
+    line-height: 1.6;
+}
+
+
+.quiz-result.show {
+    display: block;
+}
+
+
+/* =========================================================
+   PRACTICAL NAVIGATION
+   ========================================================= */
+
+.practical-navigation {
+    padding:
+        55px 0;
+
+    border-top:
+        1px solid var(--border);
+
+    background:
+        var(--surface);
+}
+
+
+.practical-navigation .container {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+.practical-nav-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    min-width: 210px;
+
+    padding:
+        16px 18px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 12px;
+
+    background:
+        var(--surface);
+
+    transition:
+        transform .2s ease,
+        border-color .2s ease;
+}
+
+
+.practical-nav-card:hover {
+    transform:
+        translateY(-3px);
+
+    border-color:
+        var(--primary);
+}
+
+
+.practical-nav-card.next {
+    text-align: right;
+}
+
+
+.practical-nav-card > span {
+    color:
+        var(--primary);
+
+    font-size: 1.3rem;
+}
+
+
+.practical-nav-card small {
+    display: block;
+
+    color:
+        var(--text-muted);
+
+    font-size: .55rem;
+
+    font-weight: 800;
+
+    letter-spacing: .08em;
+}
+
+
+.practical-nav-card strong {
+    display: block;
+
+    margin-top: 3px;
+
+    color:
+        var(--text);
+
+    font-size: .74rem;
+}
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+[data-theme="dark"] .safety-grid div {
+    background:
+        rgba(30,41,59,.7);
+}
+
+
+[data-theme="dark"] .result-icon {
+    background:
+        #12352d;
+
+    color:
+        #6ee7b7;
+}
+
+
+[data-theme="dark"] .lab-action-button {
+    background:
+        rgba(248,250,252,.92);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 950px) {
+
+    .practical-hero-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+
+    .hero-reaction-card {
+        max-width: 600px;
+    }
+
+
+    .items-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+
+    .lab-workspace {
+        grid-template-columns:
+            180px minmax(400px, 1fr);
+    }
+
+
+    .lab-observation {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 720px) {
+
+    .practical-section {
+        padding:
+            65px 0;
+    }
+
+
+    .concept-grid,
+    .what-happens {
+        grid-template-columns: 1fr;
+    }
+
+
+    .safety-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .virtual-lab-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .lab-workspace {
+        display: block;
+    }
+
+
+    .instruction-panel {
+        border-right: 0;
+
+        border-bottom:
+            1px solid #334155;
+    }
+
+
+    .instruction-panel {
+        padding:
+            17px 20px;
+    }
+
+
+    .instruction-panel .lab-tip {
+        display: none;
+    }
+
+
+    .titration-scene {
+        min-height: 570px;
+    }
+
+
+    .practical-navigation .container {
+        flex-direction: column;
+    }
+
+
+    .practical-nav-card {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 520px) {
+
+    .practical-hero {
+        padding:
+            35px 0 55px;
+    }
+
+
+    .practical-hero h1 {
+        font-size:
+            2.5rem;
+    }
+
+
+    .items-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .info-card,
+    .result-card,
+    .safety-box,
+    .quiz-card {
+        padding:
+            23px;
+    }
+
+
+    .titration-burette {
+        left: 57%;
+
+        transform:
+            translateX(-50%)
+            scale(.82);
+
+        transform-origin:
+            top center;
+    }
+
+
+    .titration-flask {
+        left: 47%;
+
+        transform:
+            translateX(-50%)
+            scale(.82);
+
+        transform-origin:
+            bottom center;
+    }
+
+
+    .indicator-bottle {
+        right: 15px;
+
+        transform:
+            scale(.78);
+
+        transform-origin:
+            bottom right;
+    }
+
+
+    .naoh-bottle {
+        left: 8px;
+
+        transform:
+            scale(.78);
+
+        transform-origin:
+            bottom left;
+    }
+
+
+    .lab-actions {
+        width: 98%;
+    }
+
+
+    .lab-action-button {
+        padding:
+            8px 9px;
+
+        font-size:
+            .55rem;
+    }
+
+}
+
+
+/* =========================================================
+   PRACTICAL 02 — pH LAB
+   The surrounding laboratory UI remains identical to
+   Practical 01. These rules only replace the equipment
+   inside the laboratory scene.
+========================================================= */
+
+.ph-scene {
+    position: relative;
+    min-height: 570px;
+    overflow: hidden;
+}
+
+/* pH meter */
+.ph-meter {
+    position: absolute;
+    left: 20%;
+    bottom: 88px;
+    width: 125px;
+    height: 145px;
+    z-index: 6;
+    border: 5px solid #475569;
+    border-radius: 12px;
+    background: linear-gradient(145deg,#334155,#1e293b);
+    box-shadow: 0 12px 20px rgba(15,23,42,.18);
+}
+
+.ph-meter-screen {
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    top: 12px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    border: 3px solid #17212a;
+    border-radius: 6px;
+    background: #cdd9bf;
+    color: #253426;
+}
+
+.ph-meter-screen small {
+    font-size: .58rem;
+    font-weight: 900;
+}
+
+.ph-meter-screen strong {
+    min-width: 48px;
+    font-family: "Courier New",monospace;
+    font-size: 1.65rem;
+    text-align: center;
+}
+
+.ph-meter-buttons {
+    position: absolute;
+    left: 15px;
+    bottom: 27px;
+    display: flex;
+    gap: 9px;
+}
+
+.ph-meter-buttons span {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #64748b;
+}
+
+.ph-meter-label {
+    position: absolute;
+    right: 9px;
+    bottom: 10px;
+    color: #94a3b8;
+    font-size: .42rem;
+    font-weight: 800;
+    letter-spacing: .05em;
+}
+
+/* =========================================================
+   ELECTRODE
+   IMPORTANT: the whole electrode system is centered on
+   the beaker, so the probe enters the beaker vertically.
+========================================================= */
+
+.ph-electrode-system {
+    position: absolute;
+    left: 50%;
+    top: 80px;
+    width: 80px;
+    height: 330px;
+    transform: translateX(-50%);
+    z-index: 10;
+    transition: transform .8s ease;
+}
+
+.ph-electrode-system.inserted {
+    transform: translateX(-50%) translateY(70px);
+}
+
+.ph-cable {
+    position: absolute;
+    left: -35px;
+    top: -8px;
+    width: 80px;
+    height: 78px;
+    border-top: 4px solid #263442;
+    border-left: 4px solid #263442;
+    border-radius: 45px 0 0 0;
+    transform: rotate(5deg);
+}
+
+.ph-electrode {
+    position: absolute;
+    left: 29px;
+    top: 43px;
+    width: 23px;
+    height: 230px;
+}
+
+.ph-electrode .electrode-head {
+    width: 23px;
+    height: 28px;
+    border-radius: 6px 6px 3px 3px;
+    background: linear-gradient(90deg,#334155,#64748b,#334155);
+}
+
+.ph-electrode .electrode-shaft {
+    width: 12px;
+    height: 155px;
+    margin: 0 auto;
+    border: 1px solid #8b9595;
+    background: linear-gradient(90deg,#cbd5d2,#f8faf9,#aebbb7);
+}
+
+.ph-electrode .electrode-tip {
+    width: 13px;
+    height: 35px;
+    margin: 0 auto;
+    border: 1px solid #667575;
+    border-radius: 0 0 8px 8px;
+    background: linear-gradient(90deg,#667575,#b8c4c0,#596867);
+}
+
+/* =========================================================
+   BEAKER
+   The beaker is centered at exactly the same horizontal
+   coordinate as the electrode.
+========================================================= */
+
+.ph-beaker {
+    position: absolute;
+    left: 50%;
+    bottom: 66px;
+    width: 155px;
+    height: 160px;
+    transform: translateX(-50%);
+    border: 3px solid rgba(51,65,85,.62);
+    border-top: 0;
+    border-radius: 0 0 17px 17px;
+    background: rgba(255,255,255,.27);
+    overflow: visible;
+    z-index: 7;
+}
+
+.ph-beaker-rim {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: 10px;
+    border: 3px solid #64748b;
+    border-radius: 50%;
+    background: rgba(255,255,255,.28);
+}
+
+.ph-solution {
+    position: absolute;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    height: 92px;
+    border-radius: 0 0 13px 13px;
+    background: linear-gradient(180deg,rgba(191,219,254,.72),rgba(147,197,253,.82));
+    transition: background .45s ease;
+}
+
+.ph-mark {
+    position: absolute;
+    right: 7px;
+    color: #64748b;
+    font-size: .43rem;
+    z-index: 8;
+}
+
+.mark-1 { top: 54px; }
+.mark-2 { top: 82px; }
+.mark-3 { top: 110px; }
+
+/* sample bottles */
+.ph-sample-bottle {
+    position: absolute;
+    bottom: 78px;
+    width: 70px;
+    height: 105px;
+    z-index: 6;
+}
+
+.acid-sample { left: 25px; }
+.water-sample { right: 25px; }
+
+.ph-sample-bottle .sample-cap {
+    width: 30px;
+    height: 12px;
+    margin: 0 auto;
+    border-radius: 4px 4px 0 0;
+    background: #334155;
+}
+
+.ph-sample-bottle .sample-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 82px;
+    border: 2px solid #64748b;
+    border-radius: 8px 8px 5px 5px;
+    background: rgba(255,255,255,.75);
+}
+
+.ph-sample-bottle .sample-body strong {
+    color: #2563eb;
+    font-size: .78rem;
+}
+
+.ph-sample-bottle .sample-body small {
+    margin-top: 4px;
+    color: #64748b;
+    font-size: .47rem;
+    font-weight: 700;
+}
+
+.water-sample .sample-body strong {
+    color: #0f8b8d;
+}
+
+/* pH scene controls */
+.ph-scene .lab-actions {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    width: 96%;
+    transform: translateX(-50%);
+    z-index: 20;
+}
+
+.ph-scene .lab-action-button {
+    padding: 9px 11px;
+    border: 1px solid #94a3b8;
+    border-radius: 8px;
+    background: rgba(255,255,255,.94);
+    color: #1e293b;
+    cursor: pointer;
+    font-size: .58rem;
+    font-weight: 800;
+    box-shadow: 0 3px 8px rgba(15,23,42,.08);
+    transition: transform .2s ease,background .2s ease,color .2s ease;
+}
+
+.ph-scene .lab-action-button:hover:not(:disabled),
+.ph-scene .sample-lab-button.selected {
+    transform: translateY(-2px);
+    background: #1554a3;
+    color: white;
+}
+
+.ph-scene .lab-action-button:disabled {
+    cursor: not-allowed;
+    opacity: .42;
+}
+
+/* Responsive pH equipment */
+@media (max-width: 520px) {
+
+    .ph-meter {
+        left: 14%;
+        transform: scale(.82);
+        transform-origin: bottom left;
+    }
+
+    .ph-electrode-system {
+        left: 52%;
+        transform: translateX(-50%) scale(.82);
+        transform-origin: top center;
+    }
+
+    .ph-electrode-system.inserted {
+        transform: translateX(-50%) translateY(57px) scale(.82);
+    }
+
+    .ph-beaker {
+        left: 52%;
+        transform: translateX(-50%) scale(.82);
+        transform-origin: bottom center;
+    }
+
+    .acid-sample {
+        left: 4px;
+        transform: scale(.78);
+        transform-origin: bottom left;
+    }
+
+    .water-sample {
+        right: 4px;
+        transform: scale(.78);
+        transform-origin: bottom right;
+    }
+
+    .ph-scene .lab-actions {
+        width: 98%;
+    }
+
+    .ph-scene .lab-action-button {
+        padding: 8px 8px;
+        font-size: .5rem;
+    }
+}
+
+
+/* Final interaction-state polish */
+.lab-action-button:disabled { cursor:not-allowed; }
+.lab-action-button.working { transform:translateY(-1px); }
+.concept-lab-scene.completed { box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--green) 35%, transparent); }

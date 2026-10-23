@@ -1,0 +1,12 @@
+RasayanVerse Practicals Repair
+
+Fixed in Practical 03–15:
+- Correct step unlocking, including Practical 15 selection-at-step-2 bug.
+- Sample selection now enables the correct current action instead of reopening step 1.
+- Progress/observation/result state updates are consistent.
+- Reset and quiz handling are preserved and guarded.
+- Virtual lab scenes now show meaningful visual changes as actions progress.
+- Dark-mode controls are readable.
+
+Practical 01 and 02 were kept as supplied except for existing working logic.
+Replace the contents of your website's experiments/ folder with the practical-01 through practical-15 folders in this package.
